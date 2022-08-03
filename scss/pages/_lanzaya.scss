@@ -1,0 +1,8 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+
+.tipoAplicaciones {
+  &__img {
+    height: 10rem;
+  }
+}

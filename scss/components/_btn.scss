@@ -1,0 +1,25 @@
+@use "../abstracts/colors" as *;
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+
+    &--radius {
+        border-radius: 1rem;
+    }
+
+    &--radiusBig {
+        border-radius: 1.5rem;
+    }
+
+    &--carrito-img {
+        // width: 9rem;
+        height: 10rem !important;
+    }
+
+    &--box-shadow {
+        box-shadow: 0 0 2rem $c-black;
+    }
+}

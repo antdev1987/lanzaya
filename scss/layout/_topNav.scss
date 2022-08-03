@@ -1,0 +1,158 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+
+.blockNav {
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+
+    @include for-size('phone-only') {
+      gap: 5rem;
+    }
+
+    & > ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5rem;
+      padding: 0 3rem;
+      transform: var(--links);
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $c-green;
+      list-style: none;
+      transition: transform 1s;
+
+      @include for-size('tablet-landscape-up') {
+        background: unset;
+        position: unset;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+      }
+
+      & > li {
+        & > a {
+          font-size: 2rem;
+          color: $c-black-dark;
+          text-decoration: none;
+          text-transform: uppercase;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .dropdown {
+        position: relative;
+
+        .servicio {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          &::after {
+            content: '+';
+            font-size: 3rem;
+            color: $c-black-dark;
+          }
+
+          @include for-size('tablet-landscape-up') {
+            &::after {
+              content: '';
+            }
+          }
+        }
+
+        &__content {
+          display: grid;
+          overflow: hidden;
+          list-style: none;
+          max-height: 0;
+          gap: 2rem;
+          transition: max-height 0.5s ease-in-out;
+          padding-left: 3rem;
+
+          @include for-size('tablet-landscape-up') {
+            max-height: unset;
+            position: absolute;
+            display: none;
+            background: rgba($c-green, 0.9);
+            grid-template-columns: repeat(2, 1fr);
+            transform: translate(-30rem);
+            padding: 5rem 3rem 2rem 3rem;
+            width: 630px;
+          }
+
+          a {
+            color: $c-black-dark;
+            text-decoration: none;
+            font-size: 1.7rem;
+          }
+        }
+
+        &:hover .dropdown__content {
+          display: grid;
+          max-height: 9999px;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    height: 5rem;
+    z-index: 100;
+  }
+
+  &__input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid $c-black-dark;
+    width: 17rem;
+    padding: 1rem;
+    color: $c-black-dark;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    color: $c-black-dark;
+    margin-left: -1rem;
+    border-bottom: 1px solid $c-black-dark;
+    padding: 1rem;
+  }
+
+  .hamburguer {
+    position: relative;
+    height: 4rem;
+    width: 3rem;
+
+    @include for-size('tablet-landscape-up') {
+      display: none;
+    }
+
+    a {
+      position: absolute;
+      transition: transform 1s;
+    }
+
+    &__open {
+      transform: var(--state-open);
+    }
+
+    &__close {
+      transform: var(--state-close);
+    }
+  }
+}

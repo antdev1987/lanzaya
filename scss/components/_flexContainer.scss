@@ -1,0 +1,100 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+
+.flexContainer {
+  flex-direction: column;
+  row-gap: 5rem;
+
+  @include for-size('tablet-portrait-up') {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__box {
+    flex: 1;
+
+    &--bg-red {
+      border-radius: 1rem;
+    }
+
+    &--bono {
+      display: flex;
+      flex-direction: column;
+
+      div,
+      .flexContainer__content {
+        flex-grow: 1;
+      }
+    }
+
+    &--clientes {
+      @include for-size('tablet-portrait-up') {
+        max-width: 30rem;
+      }
+    }
+
+    &--tokenizar {
+      @include for-size('tablet-portrait-up') {
+        max-width: 35rem;
+      }
+    }
+
+    &--intermediarios {
+      @include for-size('tablet-landscape-up') {
+        max-width: 65rem;
+      }
+    }
+
+    &--smartContract {
+      @include for-size('tablet-landscape-up') {
+        max-width: 45rem;
+      }
+    }
+
+    &--radius {
+      border-radius: 1rem;
+    }
+
+    &--radius-big {
+      border-radius: 3rem;
+    }
+  }
+
+  &__title {
+    font-size: 2.6rem;
+
+    &--tokenizacion {
+      min-height: 36.76px;
+    }
+
+    &--smartContract {
+      min-height: 55.19px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  &__content {
+    font-size: 1.7rem;
+    line-height: 1.5em;
+  }
+
+  &__img {
+    height: 15rem;
+
+    &--md {
+      height: 8rem;
+    }
+
+    &--bono {
+      height: 10rem;
+    }
+
+    &--conseguiremos {
+      height: 20rem;
+    }
+  }
+}

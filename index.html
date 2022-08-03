@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts -->
+
+    <script src="js/topNav.js" defer></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body id="nav">
+    <nav class="blockNav bg-green">
+      <div class="container blockNav__box">
+        <img
+          src="images/blockchain_b.png"
+          loading="lazy"
+          alt=""
+          class="blockNav__logo"
+        />
+
+        <ul>
+          <li class="dropdown">
+            <a href="#" class="servicio">servicios</a>
+            <ul class="dropdown__content">
+              <li>
+                <a href="blockchainv2.html">Tokenización</a>
+              </li>
+              <li>
+                <a href="lanzamientoTokens.html">Lanzamiento de tokens</a>
+              </li>
+              <li>
+                <a href="blockchainNft.html">NFT</a>
+              </li>
+              <li>
+                <a href="trazabilidad.html">Trazabilidad</a>
+              </li>
+              <li>
+                <a href="consultoriaBlockChain.html">Desarrollo blockchain</a>
+              </li>
+              <li>
+                <a href="metaverso.html">Metaverso</a>
+              </li>
+              <li>
+                <a href="pasarelaPago.html">Pasarelas de pago</a>
+              </li>
+              <li>
+                <a href="nativoSmart.html">Smart Contract</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">quiénes somos</a>
+          </li>
+          <li>
+            <a href="#">contacto</a>
+          </li>
+          <li>
+            <input type="text" class="blockNav__input" />
+            <button class="blockNav__button">
+              <img src="images/nav/lupa.png" alt="" height="20rem" />
+            </button>
+          </li>
+        </ul>
+
+        <div class="hamburguer">
+          <a href="#nav" class="hamburguer__open"
+            ><img src="images/nav/menu.svg" alt=""
+          /></a>
+          <a href="#" class="hamburguer__close"
+            ><img src="images/nav/close.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-multicolor pY-5">
+      <div class="container text-center">
+        <div class="fs-2 columns__content">
+          <h2 class="fw-300">
+            Accede a un mercado de más de 2.000 millones de usuarios mensuales
+          </h2>
+          <h1 class="text-transform-uppercase fs-3 mT-2">
+            Transforma esa idea que no te deja dormir en una aplicación
+          </h1>
+
+          <h3 class="fw-300 c-blue-secondary mT-5">
+            Transforma esa idea que no te deja dormir en una aplicación
+          </h3>
+
+          <a
+            href="#"
+            class="btn btn--radiusBig bg-blue-main pX-3 pY-1 c-white fs-md fw-600 mT-5"
+          >
+            <span class="fw-300 text-transform-uppercase">
+              CUéNTANOS TU IDEA
+            </span>
+            <span class="d-block fs-1">y empezaremos a trabajar hoy mismo</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- header finished -->
+
+    <section
+      class="container d-flex align-items-center flex-direction-column row-medium gap-5 mT-9"
+    >
+      <div class="flex-1">
+        <p class="fs-2 line-height-md">
+          El mercado de las aplicaciones móviles crece a un ritmo exponencial.
+          Para que te hagas una idea, en sólo dos años creció un 51%. Y la cosa
+          no queda ahí, pues la tendencia permite entrever que este fenómeno va
+          a seguir en aumento.
+        </p>
+
+        <p class="c-blue-secondary fs-2 line-height-md mT-2">
+          Con sus 2.000 millones de usuarios mensuales y los 260.000 millones de
+          euros que genera al año,
+          <span class="fw-bold">
+            el mercado de las apps es uno de los más grandes, y para acceder a
+            él sólo necesitas contar con tu propia aplicación.
+          </span>
+        </p>
+      </div>
+      <div class="flex-1 text-center">
+        <video
+          src="images/aplicaionesMoviles/Secuencia 01.mp4"
+          muted
+          autoplay
+          loop
+          class="w-100"
+        ></video>
+
+        <p class="fs-2">
+          Actualmente, el mercado de aplicaciones móviles ya es inmenso:
+        </p>
+        <p class="fs-small fw-bold text-transform-uppercase">
+          para acceder a él sólo necesitas contar con tu propia aplicación.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-green-light pY-8 mT-5">
+      <div class="container">
+        <div class="text-center text-transform-uppercase">
+          <h2 class="fs-4 fw-300">
+            ¿Cuáles son las grandes ventajas de una aplicación?
+          </h2>
+        </div>
+        <div class="d-flex flex-direction-column row-landscape gap-3 mT-5">
+          <!-- Box -->
+          <div
+            class="flexContainer__box flexContainer__box--radius-big border-dark bg-white pX-2 pY-3 text-center"
+          >
+            <img
+              src="images/aplicaionesMoviles/mercado.png"
+              alt=""
+              class="flexContainer__img flexContainer__img--md"
+            />
+            <h2 class="c-main text-transform-uppercase fs-md mT-3">
+              Acceso a un mercado enorme
+            </h2>
+            <p class="mT-2 fs-small fw-300">
+              Accede a un mercado que genera un volumen de negocio de más de
+              260.000 millones de euros.
+            </p>
+          </div>
+          <!-- Box -->
+
+          <!-- Box -->
+          <div
+            class="flexContainer__box flexContainer__box--radius-big border-dark bg-white pX-2 pY-3 text-center"
+          >
+            <img
+              src="images/aplicaionesMoviles/siempre.png"
+              alt=""
+              class="flexContainer__img flexContainer__img--md"
+            />
+            <h2 class="c-main text-transform-uppercase fs-md mT-3">
+              siempre presente
+            </h2>
+            <p class="mT-2 fs-small fw-300">
+              Hazte un hueco en el teléfono de tus clientes y logra que te
+              tengan presente en su día a día.
+            </p>
+          </div>
+          <!-- Box -->
+
+          <!-- Box -->
+          <div
+            class="flexContainer__box flexContainer__box--radius-big border-dark bg-white pX-2 pY-3 text-center"
+          >
+            <img
+              src="images/aplicaionesMoviles/escalabilidad.png"
+              alt=""
+              class="flexContainer__img flexContainer__img--md"
+            />
+            <h2 class="c-main text-transform-uppercase fs-md mT-3">
+              escabilidad
+            </h2>
+            <p class="mT-2 fs-small fw-300">
+              Puedes añadir tantas funciones extra como imagines y expandir tu
+              proyecto al mercado internacional.
+            </p>
+          </div>
+          <!-- Box -->
+
+          <!-- Box -->
+          <div
+            class="flexContainer__box flexContainer__box--radius-big border-dark bg-white pX-2 pY-3 text-center"
+          >
+            <img
+              src="images/aplicaionesMoviles/marketing.png"
+              alt=""
+              class="flexContainer__img flexContainer__img--md"
+            />
+            <h2 class="c-main text-transform-uppercase fs-md mT-3">
+              marketing
+            </h2>
+            <p class="mT-2 fs-small fw-300">
+              Podrás diseñar o implementar estrategias de marketing que, de
+              promedio, suelen tener una mayor tasa de conversión.
+            </p>
+          </div>
+          <!-- Box -->
+        </div>
+      </div>
+    </section>
+
+    <section class="tipoAplicaciones bg-black pY-8">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="c-white fs-4 fw-300 text-transform-uppercase">
+            ¿Qué tipo de aplicaciones desarrollamos?
+          </h2>
+          <h3 class="c-white fw-300 fs-md">
+            Desarrollamos tu aplicación para que se pueda utilizar en las
+            plataformas donde estén presentes tus clientes:
+          </h3>
+        </div>
+
+        <div
+          class="d-flex justify-content-around flex-direction-column row-medium gap-5 mT-5"
+        >
+          <div class="text-center">
+            <img
+              src="images/aplicaionesMoviles/ios.png"
+              alt=""
+              class="tipoAplicaciones__img"
+            />
+          </div>
+
+          <div class="text-center">
+            <img
+              src="images/aplicaionesMoviles/android.png"
+              alt=""
+              class="tipoAplicaciones__img"
+            />
+          </div>
+
+          <div class="text-center">
+            <img
+              src="images/aplicaionesMoviles/windows.png"
+              alt=""
+              class="tipoAplicaciones__img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tokenizar pY-8 mT-5">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="fs-md fw-300">
+            Además, podrás elegir qué tipo de desarrollo se adapta mejor a tu
+            proyecto:
+          </h2>
+        </div>
+        <div class="d-flex flex-direction-column row-landscape mT-5">
+          <!-- Box -->
+          <div
+            class="flexContainer__box flexContainer__box--radius pX-2 pY-3 text-center"
+          >
+            <img
+              src="images/aplicaionesMoviles/check.png"
+              alt=""
+              class="flexContainer__img flexContainer__img--md"
+            />
+            <h2 class="text-transform-uppercase fs-md c-main mT-3">
+              Aplicaciones nativas
+            </h2>
+            <p class="mT-2 flexContainer__content">
+              Si optas por un desarrollo individual para cada plataforma.
+            </p>
+          </div>
+          <!-- Box -->
+
+          <!-- Box -->
+          <div
+            class="flexContainer__box flexContainer__box--radius pX-2 pY-3 text-center"
+          >
+            <img
+              src="images/aplicaionesMoviles/check.png"
+              alt=""
+              class="flexContainer__img flexContainer__img--md"
+            />
+            <h2 class="text-transform-uppercase fs-md c-main mT-3">
+              Aplicaciones multiplataforma
+            </h2>
+            <p class="mT-2 flexContainer__content">
+              Si, por el contrario, prefieres un único desarrollo para varias
+              plataformas a la vez
+            </p>
+          </div>
+          <!-- Box -->
+
+          <!-- Box -->
+          <div
+            class="flexContainer__box flexContainer__box--radius pX-2 pY-3 text-center"
+          >
+            <img
+              src="images/aplicaionesMoviles/check.png"
+              alt=""
+              class="flexContainer__img flexContainer__img--md"
+            />
+            <h2 class="text-transform-uppercase fs-md c-main mT-3">
+              Aplicaciones web
+            </h2>
+            <p class="mT-2 flexContainer__content">
+              Si te interesa que sólo se realice un único desarrollo para todas
+              las plataformas y que además se pueda acceder desde un navegador
+              web.
+            </p>
+          </div>
+          <!-- Box -->
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-ya mT-9 pX-2">
+      <div class="text-center container">
+        <h2 class="c-main-blue fs-4 text-transform-uppercase">
+          ¿Cómo vamos a desarrollar tu aplicación?
+        </h2>
+      </div>
+
+      <!-- Fase 1 Start -->
+      <div
+        class="container mT-5 pY-2 pX-5 bg-white border-dark border-radius-2"
+      >
+        <div class="d-flex align-items-center gap-5 mT-5 columns">
+          <div class="columns__box columns__box--1">
+            <div class="fs-2 columns__content">
+              <h3 class="font-jost c-main text-transform-uppercase fs-3 fw-300">
+                fase 1
+              </h3>
+
+              <h2 class="font-jost c-main mT-3 fs-4 text-transform-uppercase">
+                Conceptualización
+              </h2>
+
+              <p class="line-height-md fw-bold mT-3">
+                Queremos conocer hasta el detalle más pequeño de tu idea para
+                poder desarrollar una aplicación móvil que cumpla con tus
+                expectativas.
+              </p>
+            </div>
+          </div>
+          <div class="columns__box columns__box--2">
+            <img
+              src="images/aplicaionesMoviles/conceptualizacion.png"
+              alt=""
+              class="columns__img"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Fase 1 End -->
+
+      <!-- Fase 2 Start -->
+      <div class="container mT-5 bg-green border-radius-2">
+        <div
+          class="pY-2 pX-5 d-flex align-items-center gap-5 mT-5 columns flex-direction-reverse"
+        >
+          <div class="columns__box columns__box--1 text-end">
+            <div class="fs-2 columns__content c-white">
+              <h3 class="font-jost text-transform-uppercase fs-3 fw-300">
+                fase 2
+              </h3>
+
+              <h2 class="font-jost mT-3 fs-4 text-transform-uppercase">
+                Diseño
+              </h2>
+
+              <div class="mT-3 line-height-md">
+                <p>
+                  Nuestro equipo de diseño empezará a trabajar en los aspectos
+                  visuales de tu aplicación: paletas de colores, tipografías,
+                  distribución de elementos…
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns__box columns__box--2">
+            <img
+              src="images/aplicaionesMoviles/diseño.png"
+              alt=""
+              class="columns__img"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Fase 2 End -->
+
+      <!-- Fase 3 Start -->
+      <div
+        class="container mT-5 pY-2 pX-5 bg-white border-dark border-radius-2"
+      >
+        <div class="d-flex align-items-center gap-5 mT-5 columns">
+          <div class="columns__box columns__box--1">
+            <div class="fs-2 columns__content">
+              <h3 class="font-jost c-main text-transform-uppercase fs-3 fw-300">
+                fase 3
+              </h3>
+
+              <h2 class="font-jost c-main mT-3 fs-4 text-transform-uppercase">
+                desarrollo
+              </h2>
+
+              <p class="mT-3">
+                El proyecto pasará a nuestro equipo de desarrollo, que se
+                encargará de hacer que tu aplicación sea una realidad.
+              </p>
+            </div>
+          </div>
+          <div class="columns__box columns__box--2">
+            <img
+              src="images/aplicaionesMoviles/desarrollo.png"
+              alt=""
+              class="columns__img"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Fase 3 End -->
+
+      <!-- Fase 4 Start -->
+      <div class="container mT-5">
+        <div
+          class="bg-green pY-2 pX-5 border-radius-2 d-flex align-items-center flex-direction-reverse columns gap-5"
+        >
+          <div class="columns__box columns__box--1">
+            <div class="fs-2 columns__content text-end c-white">
+              <h3 class="font-jost text-transform-uppercase fs-3 fw-300">
+                fase 4
+              </h3>
+
+              <h2 class="font-jost mT-3 fs-4 text-transform-uppercase">
+                testeo
+              </h2>
+
+              <h3 class="fw-300 mT-3 line-height-md">
+                En esta fase probaremos tu aplicación para comprobar que
+                funciona a la perfección.
+              </h3>
+            </div>
+          </div>
+          <div class="columns__box columns__box--2">
+            <img
+              src="images/aplicaionesMoviles/testeo.png"
+              alt=""
+              class="columns__img"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Fase 4 End -->
+
+      <!-- Fase 5 Start -->
+      <div
+        class="container mT-5 pY-2 pX-5 bg-white border-dark border-radius-2"
+      >
+        <div class="d-flex align-items-center gap-5 mT-5 columns">
+          <div class="columns__box columns__box--1">
+            <div class="fs-2 columns__content">
+              <h3 class="font-jost c-main text-transform-uppercase fs-3 fw-300">
+                fase 5
+              </h3>
+
+              <h2 class="font-jost c-main mT-3 fs-4 text-transform-uppercase">
+                lanzamiento
+              </h2>
+
+              <p class="mT-3">
+                Subiremos tu aplicación a las plataformas que nos indiques para
+                que tus clientes puedan descargarla.
+              </p>
+            </div>
+          </div>
+          <div class="columns__box columns__box--2">
+            <img
+              src="images/aplicaionesMoviles/lanzamiento.png"
+              alt=""
+              class="columns__img"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Fase 5 End -->
+
+      <!-- Fase 4 Start -->
+      <div class="container mT-5">
+        <div
+          class="bg-green pY-2 pX-5 border-radius-2 d-flex align-items-center flex-direction-reverse columns gap-5"
+        >
+          <div class="columns__box columns__box--1">
+            <div class="fs-2 columns__content text-end c-white">
+              <h3 class="font-jost text-transform-uppercase fs-3 fw-300">
+                fase 6
+              </h3>
+
+              <h2 class="font-jost mT-3 fs-4 text-transform-uppercase">
+                Actualizaciones
+              </h2>
+
+              <h3 class="fw-300 mT-3 line-height-md">
+                Mantendremos tu aplicación actualizada para que la experiencia
+                de uso siga siendo extraordinaria.
+              </h3>
+            </div>
+          </div>
+          <div class="columns__box columns__box--2">
+            <img
+              src="images/aplicaionesMoviles/actualizaciones.png"
+              alt=""
+              class="columns__img"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Fase 4 End -->
+    </section>
+
+    <div class="container text-center mT-9">
+      <h2 class="fs-3">Podemos empezar ahora mismo, ¿cuál es tu idea?</h2>
+
+      <a
+        href="#"
+        class="d-inline-block btn--radiusBig bg-multicolor c-white text-transform-uppercase text-decoration-none fs-3 pX-2 pY-2 mT-3"
+      >
+        os cuento mi proyecto
+      </a>
+    </div>
+  </body>
+</html>

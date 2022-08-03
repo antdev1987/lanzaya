@@ -1,0 +1,356 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+
+.container {
+  @include pX(2rem);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin row {
+  flex-direction: row !important;
+  justify-content: space-around;
+}
+
+.row-normal-phone {
+  @include for-size('phone-only') {
+    flex-direction: row !important;
+  }
+}
+
+.row-medium {
+  @include for-size('tablet-medium-up') {
+    @include row;
+  }
+}
+
+.row-landscape {
+  @include for-size('tablet-landscape-up') {
+    @include row;
+  }
+}
+
+//! Paddings
+.pT-5 {
+  padding-top: 5rem;
+}
+
+.pB-3 {
+  padding-bottom: 3rem;
+}
+
+.pL-4 {
+  padding-left: 4rem;
+}
+
+.pY-1 {
+  @include pY(1rem);
+}
+
+.pY-2 {
+  @include pY(2rem);
+}
+
+.pY-3 {
+  @include pY(3rem);
+}
+
+.pY-5 {
+  @include pY(5rem);
+}
+
+.pY-8 {
+  @include pY(8rem);
+}
+
+.pY-10 {
+  @include pY(10rem);
+}
+
+.pX-2 {
+  @include pX(2rem);
+}
+
+.pX-3 {
+  @include pX(3rem);
+}
+
+.pX-5 {
+  @include pX(5rem);
+}
+
+.pX-6 {
+  @include pX(6rem);
+}
+
+.pX-8 {
+  @include pX(8rem);
+}
+
+// ! Margin
+.mL-auto {
+  margin-left: auto;
+}
+
+.mT-auto {
+  margin-top: auto;
+}
+
+.mT-1 {
+  margin-top: 1rem;
+}
+
+.mT-2 {
+  margin-top: 2rem;
+}
+
+.mT-3 {
+  margin-top: 3rem !important;
+}
+
+.mT-5 {
+  margin-top: 5rem !important;
+}
+
+.mT-9 {
+  margin-top: 9rem;
+}
+
+.mR-1 {
+  margin-right: 1rem;
+}
+
+.mR-2 {
+  margin-right: 2rem;
+}
+
+// ! Display
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-direction-reverse-row {
+  flex-direction: row-reverse;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+// !gap
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+
+.gap-10 {
+  gap: 10rem;
+}
+
+.row-gap-5 {
+  row-gap: 5rem;
+}
+
+// ! Fonts
+.font-jost {
+  font-family: 'Jost', sans-serif;
+}
+
+// ! Font-size
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-small {
+  font-size: 1.7rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-md {
+  font-size: 2.5rem;
+}
+
+.fs-3 {
+  font-size: 3rem;
+}
+
+.fs-4 {
+  font-size: 4rem;
+}
+
+.fs-5 {
+  font-size: 5rem;
+}
+
+.fs-6 {
+  font-size: 6rem;
+}
+
+.fs-7 {
+  font-size: 7rem;
+}
+// ! Font weight
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+// ! Color
+.c-white {
+  color: $c-white;
+}
+
+.c-main {
+  color:$c-green;
+}
+
+.c-main-blue {
+  color: $main-blue;
+}
+
+.c-blue-secondary {
+  color: $sedoncary-blue;
+}
+// ! bg
+.bg-white {
+  background-color: $c-white;
+}
+
+.bg-green {
+  background-color: $c-green;
+}
+
+.bg-green-dark {
+  background-color: $c-green-dark;
+}
+
+.bg-blue-main {
+  background-color: $main-blue;
+}
+
+.bg-blue-secondary {
+  background-color: $sedoncary-blue;
+}
+
+.bg-multicolor {
+  background: url(../../images/aplicaionesMoviles/fondo1.jpg) no-repeat center center / cover;
+}
+
+.bg-black {
+  // background: url("../../images/aplicaionesMoviles/fondo2.jpg") no-repeat center center / cover;
+  background: black;
+}
+
+.bg-ya {
+  background: url("../../images/aplicaionesMoviles/fondo2.jpg") no-repeat center center / cover;
+}
+
+.bg-green-light {
+  background-color: $green-light;
+}
+// ! Decoration
+.text-decoration-none {
+  text-decoration: none;
+}
+
+// ! text transform
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+
+// ! Align
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+// ! border
+.border-dark {
+  box-shadow: 0 0 0.7rem $c-black;
+}
+
+// ! width
+.w-100 {
+  width: 100%;
+}
+
+// ! ul
+.list-style-none {
+  list-style: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+// ! line-height
+.line-height-md {
+  line-height: 1.5em;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.border-radius-2 {
+  border-radius: 2rem;
+}
