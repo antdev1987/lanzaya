@@ -18,11 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@300;600&display=swap"
       rel="stylesheet"
     />
-    <!-- Fonts -->
 
-    <!-- script -->
+    <!-- js -->
+    <script src="js/changeInfo.js" defer></script>
     <script src="js/toggleoverflow.js" defer></script>
-    
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
@@ -87,28 +88,35 @@
     </nav>
 
     <header class="bg-multicolor pY-5">
-      <div class="container text-center">
-        <div class="fs-2 columns__content">
-          <h2 class="fw-300">
-            Accede a un mercado de más de 2.000 millones de usuarios mensuales
-          </h2>
-          <h1 class="text-transform-uppercase fs-3 mT-2">
-            Transforma esa idea que no te deja dormir en una aplicación
-          </h1>
+      <div class="container">
+        <div
+          class="bg-white d-flex flex-direction-column row-landscape align-items-center flexContainer__box--radius-big gap-5 mT-2 pY-5 pX-5"
+        >
+          <div class="columns__box">
+            <div class="fs-2 columns__content">
+              <h2 class="c-main fw-300 fs-md">
+                Olvídate de adaptarte a un software genérico
+              </h2>
+              <h1 class="c-main">
+                Desarrollamos un software a medida para tu negocio
+              </h1>
 
-          <h3 class="fw-300 c-blue-secondary mT-5">
-            Transforma esa idea que no te deja dormir en una aplicación
-          </h3>
+              <h3 class="fw-300 mT-5">
+                Cuenta con todas las prestaciones que necesita tu proyecto en un
+                sólo software
+              </h3>
 
-          <a
-            href="#"
-            class="btn btn--radiusBig bg-blue-main pX-3 pY-1 c-white fs-md fw-600 mT-5"
-          >
-            <span class="fw-300 text-transform-uppercase">
-              CUéNTANOS TU IDEA
-            </span>
-            <span class="d-block fs-1">y empezaremos a trabajar hoy mismo</span>
-          </a>
+              <a
+                href="#"
+                class="btn btn--radiusBig btn--box-shadow bg-green-dark pX-3 pY-1 c-white fs-md fw-600 mT-5"
+              >
+                Necesito un software a medida
+              </a>
+            </div>
+          </div>
+          <div class="columns__box">
+            <div style="height: 40rem; width: 100%; background: grey"></div>
+          </div>
         </div>
       </div>
     </header>
@@ -117,165 +125,326 @@
     <section
       class="container d-flex align-items-center flex-direction-column row-medium gap-5 mT-9"
     >
-      <div class="flex-1">
-        <p class="fs-2 line-height-md">
-          El mercado de las aplicaciones móviles crece a un ritmo exponencial.
-          Para que te hagas una idea, en sólo dos años creció un 51%. Y la cosa
-          no queda ahí, pues la tendencia permite entrever que este fenómeno va
-          a seguir en aumento.
-        </p>
-
-        <p class="c-blue-secondary fs-2 line-height-md mT-2">
-          Con sus 2.000 millones de usuarios mensuales y los 260.000 millones de
-          euros que genera al año,
-          <span class="fw-bold">
-            el mercado de las apps es uno de los más grandes, y para acceder a
-            él sólo necesitas contar con tu propia aplicación.
-          </span>
-        </p>
-      </div>
       <div class="flex-1 text-center">
-        <video
-          src="images/aplicaionesMoviles/Secuencia 01.mp4"
-          muted
-          autoplay
-          loop
+        <img
+          src="images/desarrolloSoftware/diseño.png"
+          alt=""
+          loading="lazy"
           class="w-100"
-        ></video>
-
-        <p class="fs-2">
-          Actualmente, el mercado de aplicaciones móviles ya es inmenso:
+        />
+      </div>
+      <div class="flex-1 fs-2 line-height-md">
+        <p>
+          Cuando vamos a comprar un traje a una tienda genérica, siempre hay
+          algo que no nos termina de quedar bien. Esto sucede porque están
+          hechos a partir de patrones estándar que no siempre se adaptan a ti.
         </p>
-        <p class="fs-small fw-bold text-transform-uppercase">
-          para acceder a él sólo necesitas contar con tu propia aplicación.
+
+        <p class="mT-2">
+          Por el contrario, cuando nos hacemos un traje a medida, el sastre se
+          toma el tiempo de coger nuestras propias medidas. El resultado es que
+          éste se adapta a nosotros sin que haya que retirarlo después.
+        </p>
+
+        <p class="mT-3">
+          <span class="fw-bold"
+            >Con el software pasa lo mismo. Si optas por uno genérico, siempre
+            habrá funciones que necesites, pero que no tengas.
+          </span>
+          <span class="c-secondary fw-bold">
+            Pero si eliges uno a medida, tendrás la certeza de que está pensado
+            en exclusiva para tu proyecto.
+          </span>
         </p>
       </div>
     </section>
 
-    <section class="bg-green-light pY-8 mT-5">
+    <section class="requisitos pY-8 mT-5">
       <div class="container">
         <div class="text-center text-transform-uppercase">
-          <h2 class="fs-4 fw-300">
-            ¿Cuáles son las grandes ventajas de una aplicación?
+          <h2 class="fs-3 fw-300">
+            ¿Qué requisitos debe cumplir un software a medida para ser eficaz?
           </h2>
         </div>
         <div class="d-flex flex-direction-column row-landscape gap-3 mT-5">
           <!-- Box -->
           <div
-            class="flexContainer__box flexContainer__box--radius-big border-dark bg-white pX-2 pY-3 text-center"
+            class="c-main requisitos__box flexContainer__box flexContainer__box--radius border-dark bg-white pX-2 pY-5 text-center cursor-pointer"
+            id="aumento"
           >
             <img
-              src="images/aplicaionesMoviles/mercado.png"
+              src="images/desarrolloSoftware/iconos/incremento.png"
               alt=""
-              class="flexContainer__img flexContainer__img--md"
+              class="flexContainer__img flexContainer__img--md img-main"
             />
-            <h2 class="c-main text-transform-uppercase fs-md mT-3">
-              Acceso a un mercado enorme
+
+            <img
+              src="images/desarrolloSoftware/iconos/incremento_b.png"
+              alt=""
+              class="flexContainer__img flexContainer__img--md img-active"
+            />
+
+            <h2 class="text-transform-uppercase fs-md mT-3">
+              Aumento de la productividad
             </h2>
-            <p class="mT-2 fs-small fw-300">
-              Accede a un mercado que genera un volumen de negocio de más de
-              260.000 millones de euros.
-            </p>
+
+            <h3 class="d-none">Te permite optimizar el tiempo.</h3>
           </div>
           <!-- Box -->
 
           <!-- Box -->
           <div
-            class="flexContainer__box flexContainer__box--radius-big border-dark bg-white pX-2 pY-3 text-center"
+            class="c-main c-white requisitos__box bg-blue-green flexContainer__box flexContainer__box--radius border-dark bg-white pX-2 pY-5 text-center cursor-pointer"
+            id="rentabilidad"
           >
             <img
-              src="images/aplicaionesMoviles/siempre.png"
+              src="images/desarrolloSoftware/iconos/rentable.png"
               alt=""
-              class="flexContainer__img flexContainer__img--md"
+              class="flexContainer__img flexContainer__img--md img-main"
             />
-            <h2 class="c-main text-transform-uppercase fs-md mT-3">
-              siempre presente
+
+            <img
+              src="images/desarrolloSoftware/iconos/rentable_b.png"
+              alt=""
+              class="flexContainer__img flexContainer__img--md img-active"
+            />
+            <h2 class="text-transform-uppercase fs-md mT-3">
+              Rentabilidad a largo plazo
             </h2>
-            <p class="mT-2 fs-small fw-300">
-              Hazte un hueco en el teléfono de tus clientes y logra que te
-              tengan presente en su día a día.
-            </p>
+
+            <h3 class="d-none">
+              No te obliga a renovar licencias ni a comprar addons.
+            </h3>
           </div>
           <!-- Box -->
 
           <!-- Box -->
           <div
-            class="flexContainer__box flexContainer__box--radius-big border-dark bg-white pX-2 pY-3 text-center"
+            class="c-main requisitos__box flexContainer__box flexContainer__box--radius border-dark bg-white pX-2 pY-5 text-center cursor-pointer"
+            id="posible"
           >
             <img
-              src="images/aplicaionesMoviles/escalabilidad.png"
+              src="images/desarrolloSoftware/iconos/posible.png"
               alt=""
-              class="flexContainer__img flexContainer__img--md"
+              class="flexContainer__img flexContainer__img--md img-main"
             />
-            <h2 class="c-main text-transform-uppercase fs-md mT-3">
-              escabilidad
+            <img
+              src="images/desarrolloSoftware/iconos/posible.png"
+              alt=""
+              class="flexContainer__img flexContainer__img--md img-active"
+            />
+
+            <h2 class="text-transform-uppercase fs-md mT-3">
+              Hacer posible lo imposible
             </h2>
-            <p class="mT-2 fs-small fw-300">
-              Puedes añadir tantas funciones extra como imagines y expandir tu
-              proyecto al mercado internacional.
-            </p>
+
+            <h3 class="d-none">
+              No limita a tu empresa con funcionalidades deficientes.
+            </h3>
           </div>
           <!-- Box -->
 
           <!-- Box -->
           <div
-            class="flexContainer__box flexContainer__box--radius-big border-dark bg-white pX-2 pY-3 text-center"
+            class="c-main requisitos__box flexContainer__box flexContainer__box--radius border-dark bg-white pX-2 pY-5 text-center cursor-pointer"
+            id="simple"
           >
             <img
-              src="images/aplicaionesMoviles/marketing.png"
-              alt=""
-              class="flexContainer__img flexContainer__img--md"
+              src="images/desarrolloSoftware/iconos/easy.png"
+              alt="simple"
+              class="flexContainer__img flexContainer__img--md img-main"
             />
-            <h2 class="c-main text-transform-uppercase fs-md mT-3">
-              marketing
-            </h2>
-            <p class="mT-2 fs-small fw-300">
-              Podrás diseñar o implementar estrategias de marketing que, de
-              promedio, suelen tener una mayor tasa de conversión.
-            </p>
+
+            <img
+              src="images/desarrolloSoftware/iconos/easy_b.png"
+              alt=""
+              class="flexContainer__img flexContainer__img--md img-active"
+            />
+
+            <h2 class="text-transform-uppercase fs-md mT-3">Ser simple</h2>
+            <h3 class="d-none">
+              Para que no tengas que dedicarle apenas tiempo.
+            </h3>
+          </div>
+          <!-- Box -->
+
+          <!-- Box -->
+          <div
+            class="c-main requisitos__box flexContainer__box flexContainer__box--radius border-dark bg-white pX-2 pY-5 text-center cursor-pointer"
+            id="seguro"
+          >
+            <img
+              src="images/desarrolloSoftware/iconos/seguro.png"
+              alt=""
+              class="flexContainer__img flexContainer__img--md img-main"
+            />
+
+            <img
+              src="images/desarrolloSoftware/iconos/seguro_b.png"
+              alt=""
+              class="flexContainer__img flexContainer__img--md img-active"
+            />
+
+            <h2 class="text-transform-uppercase fs-md mT-3">Ser seguro</h2>
+            <h3 class="d-none">Está hecho a prueba de hackers.</h3>
           </div>
           <!-- Box -->
         </div>
       </div>
+
+      <div class="container" id="content">
+        <div
+          class="bg-white d-flex flex-direction-column row-landscape align-items-center flexContainer__box--radius-big gap-5 mT-2 pY-5 pX-5"
+        >
+          <div class="columns__box">
+            <div class="fs-2 columns__content">
+              <h2 class="c-secondary fs-3 text-transform-uppercase">
+                rentabilidad a largo plazo
+              </h2>
+
+              <h3 class="fw-300 mT-5">
+                No te obliga a renovar licencias ni a comprobar addans
+              </h3>
+
+              <a
+                href="#"
+                class="btn btn--radiusBig btn--box-shadow bg-green-dark pX-3 pY-1 c-white fs-md fw-600 text-transform-uppercase mT-5"
+              >
+                cuéntanos tu proyecto
+              </a>
+            </div>
+          </div>
+          <div class="columns__box">
+            <div style="height: 40rem; width: 100%; background: grey"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="tipoAplicaciones bg-black pY-8">
+    <section class="amedida bg-multicolor pY-10">
       <div class="container">
         <div class="text-center">
-          <h2 class="c-white fs-4 fw-300 text-transform-uppercase">
-            ¿Qué tipo de aplicaciones desarrollamos?
+          <h2 class="fs-2 fw-300 text-transform-uppercase">
+            ¿Por qué contar con un software hecho a medida va a ser un punto de
+            inflexión en la historia de tu proyecto?
           </h2>
-          <h3 class="c-white fw-300 fs-md">
-            Desarrollamos tu aplicación para que se pueda utilizar en las
-            plataformas donde estén presentes tus clientes:
-          </h3>
         </div>
 
-        <div
-          class="d-flex justify-content-around flex-direction-column row-medium gap-5 mT-5"
-        >
-          <div class="text-center">
-            <img
-              src="images/aplicaionesMoviles/ios.png"
-              alt=""
-              class="tipoAplicaciones__img"
-            />
+        <div class="d-flex flex-direction-column row-medium gap-5 mT-5">
+          <div class="flex-1 flexContainer__box--radius bg-white pY-5 pX-5">
+            <h2 class="c-main-blue fs-md fw-300">
+              Los softwares genéricos están pensados para todos. Por eso es muy
+              frecuente que:
+            </h2>
+
+            <ul class="mT-3">
+              <li class="d-flex gap-3">
+                <img
+                  src="images/desarrolloSoftware/iconos/x.png"
+                  alt=""
+                  class="amedida__img"
+                />
+
+                <p class="fs-2">
+                  Se te quede corto porque necesitas hacer más cosas que las que
+                  el programa te permite.
+                </p>
+              </li>
+
+              <li class="d-flex gap-3 mT-3">
+                <img
+                  src="images/desarrolloSoftware/iconos/x.png"
+                  alt=""
+                  class="amedida__img"
+                />
+
+                <p class="fs-2">
+                  Te quede largo y pagues por funciones que no necesitas y que
+                  no llegarás a utilizar.
+                </p>
+              </li>
+
+              <li class="d-flex gap-3 mT-3">
+                <img
+                  src="images/desarrolloSoftware/iconos/x.png"
+                  alt=""
+                  class="amedida__img"
+                />
+
+                <p class="fs-2">
+                  Esté obsoleto porque la tecnología que utiliza es antigua o
+                  porque ya no se sigue actualizando.
+                </p>
+              </li>
+
+              <li class="d-flex gap-3 mT-3">
+                <img
+                  src="images/desarrolloSoftware/iconos/x.png"
+                  alt=""
+                  class="amedida__img"
+                />
+
+                <p class="fs-2">Sea tan complicado que resulta ineficiente.</p>
+              </li>
+            </ul>
           </div>
 
-          <div class="text-center">
-            <img
-              src="images/aplicaionesMoviles/android.png"
-              alt=""
-              class="tipoAplicaciones__img"
-            />
-          </div>
+          <div class="flex-1 flexContainer__box--radius bg-white pY-5 pX-5">
+            <h2 class="c-main fs-md fw-300 text-center">
+              Todos estos problemas podemos solucionarlos desarrollando un
+              software a medida.
+            </h2>
 
-          <div class="text-center">
-            <img
-              src="images/aplicaionesMoviles/windows.png"
-              alt=""
-              class="tipoAplicaciones__img"
-            />
+            <h3 class="c-main fs-small text-center mT-3">
+              De este modo, igual que el sastre que te toma las medidas, nos
+              tomaremos el tiempo necesario para conocer tu negocio y sus
+              necesidades para:
+            </h3>
+
+            <ul class="mT-3">
+              <li class="d-flex gap-3">
+                <img
+                  src="images/desarrolloSoftware/iconos/check.png"
+                  alt=""
+                  class="amedida__img"
+                />
+
+                <p class="fs-2">
+                  Que tu software sea capaz de satisfacer las necesidades de tu
+                  proyecto.
+                </p>
+              </li>
+
+              <li class="d-flex gap-3 mT-3">
+                <img
+                  src="images/desarrolloSoftware/iconos/check.png"
+                  alt=""
+                  class="amedida__img"
+                />
+
+                <p class="fs-2">Que pagues únicamente por lo que necesitas.</p>
+              </li>
+
+              <li class="d-flex gap-3 mT-3">
+                <img
+                  src="images/desarrolloSoftware/iconos/check.png"
+                  alt=""
+                  class="amedida__img"
+                />
+
+                <p class="fs-2">Que tu software esté actualizado.</p>
+              </li>
+
+              <li class="d-flex gap-3 mT-3">
+                <img
+                  src="images/desarrolloSoftware/iconos/check.png"
+                  alt=""
+                  class="amedida__img"
+                />
+
+                <p class="fs-2">Su uso sea sencillo</p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -295,7 +464,7 @@
             class="flexContainer__box flexContainer__box--radius pX-2 pY-3 text-center"
           >
             <img
-              src="images/aplicaionesMoviles/check.png"
+              src="images/desarrolloSoftware/iconos/check.png"
               alt=""
               class="flexContainer__img flexContainer__img--md"
             />
@@ -313,7 +482,7 @@
             class="flexContainer__box flexContainer__box--radius pX-2 pY-3 text-center"
           >
             <img
-              src="images/aplicaionesMoviles/check.png"
+              src="images/desarrolloSoftware/iconos/check.png"
               alt=""
               class="flexContainer__img flexContainer__img--md"
             />
@@ -332,7 +501,7 @@
             class="flexContainer__box flexContainer__box--radius pX-2 pY-3 text-center"
           >
             <img
-              src="images/aplicaionesMoviles/check.png"
+              src="images/desarrolloSoftware/iconos/check.png"
               alt=""
               class="flexContainer__img flexContainer__img--md"
             />
@@ -353,15 +522,19 @@
     <section class="bg-ya mT-9 pX-2">
       <div class="text-center container">
         <h2 class="c-main-blue fs-4 text-transform-uppercase">
-          ¿Cómo vamos a desarrollar tu aplicación?
+          ¿Cómo vamos a desarrollar tu software a medida?
         </h2>
+
+        <h3 class="fs-md fw-300 mT-2">
+          Dentro del proceso de desarrollo podemos encontrar 6 fases:
+        </h3>
       </div>
 
       <!-- Fase 1 Start -->
       <div
         class="container mT-5 pY-2 pX-5 bg-white border-dark border-radius-2"
       >
-        <div class="d-flex align-items-center gap-5 mT-5 columns">
+        <div class="d-flex align-items-center gap-5 columns">
           <div class="columns__box columns__box--1">
             <div class="fs-2 columns__content">
               <h3 class="font-jost c-main text-transform-uppercase fs-3 fw-300">
@@ -369,19 +542,18 @@
               </h3>
 
               <h2 class="font-jost c-main mT-3 fs-4 text-transform-uppercase">
-                Conceptualización
+                Planificación
               </h2>
 
               <p class="line-height-md fw-bold mT-3">
-                Queremos conocer hasta el detalle más pequeño de tu idea para
-                poder desarrollar una aplicación móvil que cumpla con tus
-                expectativas.
+                Te preguntaremos por las necesidades de tu proyecto y qué
+                problemas necesitas resolver a través de un software.
               </p>
             </div>
           </div>
           <div class="columns__box columns__box--2">
             <img
-              src="images/aplicaionesMoviles/conceptualizacion.png"
+              src="images/desarrolloSoftware/conceptualizacion.png"
               alt=""
               class="columns__img"
               loading="lazy"
@@ -394,7 +566,7 @@
       <!-- Fase 2 Start -->
       <div class="container mT-5 bg-green border-radius-2">
         <div
-          class="pY-2 pX-5 d-flex align-items-center gap-5 mT-5 columns flex-direction-reverse"
+          class="pY-2 pX-5 d-flex align-items-center gap-5 columns flex-direction-reverse"
         >
           <div class="columns__box columns__box--1 text-end">
             <div class="fs-2 columns__content c-white">
@@ -408,9 +580,8 @@
 
               <div class="mT-3 line-height-md">
                 <p>
-                  Nuestro equipo de diseño empezará a trabajar en los aspectos
-                  visuales de tu aplicación: paletas de colores, tipografías,
-                  distribución de elementos…
+                  Crearemos un plan estratégico con soluciones a esos problemas
+                  que nos habías comentado y empezaremos a diseñar el software.
                 </p>
               </div>
             </div>
@@ -418,7 +589,7 @@
 
           <div class="columns__box columns__box--2">
             <img
-              src="images/aplicaionesMoviles/diseño.png"
+              src="images/desarrolloSoftware/diseño.png"
               alt=""
               class="columns__img"
             />
@@ -431,7 +602,7 @@
       <div
         class="container mT-5 pY-2 pX-5 bg-white border-dark border-radius-2"
       >
-        <div class="d-flex align-items-center gap-5 mT-5 columns">
+        <div class="d-flex align-items-center gap-5 columns">
           <div class="columns__box columns__box--1">
             <div class="fs-2 columns__content">
               <h3 class="font-jost c-main text-transform-uppercase fs-3 fw-300">
@@ -439,18 +610,18 @@
               </h3>
 
               <h2 class="font-jost c-main mT-3 fs-4 text-transform-uppercase">
-                desarrollo
+                Programación
               </h2>
 
               <p class="mT-3">
-                El proyecto pasará a nuestro equipo de desarrollo, que se
-                encargará de hacer que tu aplicación sea una realidad.
+                Cuando el diseño ya está terminado, el proyecto pasa a la fase
+                de programación, donde haremos que funcione a la perfección.
               </p>
             </div>
           </div>
           <div class="columns__box columns__box--2">
             <img
-              src="images/aplicaionesMoviles/desarrollo.png"
+              src="images/desarrolloSoftware/desarrollo.png"
               alt=""
               class="columns__img"
               loading="lazy"
@@ -476,14 +647,14 @@
               </h2>
 
               <h3 class="fw-300 mT-3 line-height-md">
-                En esta fase probaremos tu aplicación para comprobar que
-                funciona a la perfección.
+                Probaremos y testearemos el software para asegurarnos de que no
+                hay ningún error.
               </h3>
             </div>
           </div>
           <div class="columns__box columns__box--2">
             <img
-              src="images/aplicaionesMoviles/testeo.png"
+              src="images/desarrolloSoftware/testeo.png"
               alt=""
               class="columns__img"
             />
@@ -504,18 +675,18 @@
               </h3>
 
               <h2 class="font-jost c-main mT-3 fs-4 text-transform-uppercase">
-                lanzamiento
+                Implementación
               </h2>
 
               <p class="mT-3">
-                Subiremos tu aplicación a las plataformas que nos indiques para
-                que tus clientes puedan descargarla.
+                El resultado de todo este proceso es un software a medida listo
+                para ser implementado en tu proyecto.
               </p>
             </div>
           </div>
           <div class="columns__box columns__box--2">
             <img
-              src="images/aplicaionesMoviles/lanzamiento.png"
+              src="images/desarrolloSoftware/lanzamiento.png"
               alt=""
               class="columns__img"
               loading="lazy"
@@ -537,18 +708,18 @@
               </h3>
 
               <h2 class="font-jost mT-3 fs-4 text-transform-uppercase">
-                Actualizaciones
+                Seguimiento
               </h2>
 
               <h3 class="fw-300 mT-3 line-height-md">
-                Mantendremos tu aplicación actualizada para que la experiencia
-                de uso siga siendo extraordinaria.
+                Te daremos soporte y velaremos para que esté actualizado y siga
+                cumpliendo con tus expectativas.
               </h3>
             </div>
           </div>
           <div class="columns__box columns__box--2">
             <img
-              src="images/aplicaionesMoviles/actualizaciones.png"
+              src="images/desarrolloSoftware/actualizaciones.png"
               alt=""
               class="columns__img"
             />
@@ -559,13 +730,20 @@
     </section>
 
     <div class="container text-center mT-9">
-      <h2 class="fs-3">Podemos empezar ahora mismo, ¿cuál es tu idea?</h2>
+      <h2 class="fs-3 fw-300">¿Qué tipo de software podemos desarrollar?</h2>
+
+      <h3 class="fs-3 fw-300 mT-3">
+        Cuando nos hacen esta pregunta siempre respondemos lo mismo:
+        <span class="d-block fw-bold text-transform-uppercase"
+          >si puedes imaginarlo, podemos hacerlo.</span
+        >
+      </h3>
 
       <a
         href="#"
-        class="d-inline-block btn--radiusBig bg-multicolor c-white text-transform-uppercase text-decoration-none fs-3 pX-2 pY-2 mT-3"
+        class="d-inline-block flexContainer__box--radius-big btn--multicolor c-white text-transform-uppercase text-decoration-none fs-md pX-2 pY-2 mT-3"
       >
-        os cuento mi proyecto
+        ¿Qué tienes en mente?
       </a>
     </div>
 

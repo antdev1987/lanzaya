@@ -1,0 +1,39 @@
+@use '../abstracts/mixins' as *;
+
+.footer {
+  &__containet.d-flex {
+    flex-direction: column;
+    row-gap: 3rem;
+
+    @include for-size('tablet-portrait-up') {
+      flex-direction: row;
+    }
+  }
+
+  &__box {
+    flex: 1;
+  }
+
+  &__logo {
+    height: 13rem;
+    width: 100%;
+
+    @include for-size('tablet-portrait-up') {
+      width: initial;
+      height: 7.6rem;
+    }
+  }
+
+  &__menu {
+    gap: 2rem;
+
+    li {
+      a {
+        display: block;
+        img {
+          height: 2rem;
+        }
+      }
+    }
+  }
+}

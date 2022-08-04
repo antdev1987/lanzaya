@@ -130,6 +130,10 @@
   display: inline-block;
 }
 
+.d-none {
+  display: none;
+}
+
 .d-block {
   display: block;
 }
@@ -249,11 +253,15 @@
 }
 // ! Color
 .c-white {
-  color: $c-white;
+  color: $c-white !important;
 }
 
 .c-main {
-  color:$c-green;
+  color: $c-green;
+}
+
+.c-secondary {
+  color: $c-green-dark;
 }
 
 .c-main-blue {
@@ -285,7 +293,12 @@
 }
 
 .bg-multicolor {
-  background: url(../../images/aplicaionesMoviles/fondo1.jpg) no-repeat center center / cover;
+  background: url(../../images/aplicaionesMoviles/fondo1.jpg) no-repeat center
+    center / cover;
+}
+
+.bg-blue-green {
+  background: linear-gradient(to top, $secondary-blue, $c-green);
 }
 
 .bg-black {
@@ -294,7 +307,8 @@
 }
 
 .bg-ya {
-  background: url("../../images/aplicaionesMoviles/fondo2.jpg") no-repeat center center / cover;
+  background: url('../../images/aplicaionesMoviles/fondo2.jpg') no-repeat center
+    center / cover;
 }
 
 .bg-green-light {
@@ -321,6 +335,11 @@
 
 .text-justify {
   text-align: justify;
+}
+
+// ! curosr
+.cursor-pointer {
+  cursor: pointer;
 }
 
 // ! border
@@ -353,4 +372,14 @@
 
 .border-radius-2 {
   border-radius: 2rem;
+}
+
+// ! overflow
+
+.overflow-hidden {
+  overflow: hidden;
+
+  @include for-size('tablet-landscape-up') {
+    overflow: unset;
+  }
 }

@@ -6,3 +6,31 @@
     height: 10rem;
   }
 }
+
+.amedida {
+  &__img {
+    height: 3rem;
+  }
+}
+
+.requisitos {
+  &__box {
+    .img-main {
+      display: unset;
+    }
+
+    .img-active {
+      display: none;
+    }
+
+    &.bg-blue-green {
+      .img-main {
+        display: none;
+      }
+
+      .img-active {
+        display: unset;
+      }
+    }
+  }
+}
