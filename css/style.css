@@ -220,6 +220,10 @@ body:target {
   flex: 1;
 }
 
+.flex-2 {
+  flex: 2;
+}
+
 .gap-1 {
   gap: 1rem;
 }
@@ -794,6 +798,10 @@ body:target {
 }
 .requisitos__box.bg-blue-green .img-active {
   display: unset;
+}
+
+.socialMediaHeader {
+  background: url(../../images/socialMedia/fondo\ 1.jpg) no-repeat bottom center/cover;
 }
 
 .footer__containet.d-flex {
