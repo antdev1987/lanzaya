@@ -352,6 +352,10 @@ body:target {
   background: black;
 }
 
+.bg-black-2 {
+  background: url(../images/socialMedia/fondo\ 3.jpg) no-repeat center center/cover;
+}
+
 .bg-ya {
   background: url("../../images/aplicaionesMoviles/fondo2.jpg") no-repeat center center/cover;
 }
@@ -802,6 +806,34 @@ body:target {
 
 .socialMediaHeader {
   background: url(../../images/socialMedia/fondo\ 1.jpg) no-repeat bottom center/cover;
+}
+
+.abrigo__content {
+  row-gap: 10rem;
+}
+.abrigo__content > div {
+  padding: 0 2rem;
+}
+@media (min-width: only-phone) {
+  .abrigo__content > div {
+    flex: 1;
+  }
+}
+@media (min-width: 600px) {
+  .abrigo__content > div {
+    flex-basis: 50%;
+  }
+}
+
+.compras {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+.compras > div {
+  padding: 5rem 3rem;
+}
+.compras ul {
+  list-style: none;
 }
 
 .footer__containet.d-flex {

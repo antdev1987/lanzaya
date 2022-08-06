@@ -1,6 +1,38 @@
-.socialMediaHeader {
+@use '../abstracts/mixins' as *;
 
-    
-    
-    background: url(../../images/socialMedia/fondo\ 1.jpg) no-repeat bottom center / cover;
+.socialMediaHeader {
+  background: url(../../images/socialMedia/fondo\ 1.jpg) no-repeat bottom center /
+    cover;
+}
+
+.abrigo {
+  &__content {
+    row-gap: 10rem;
+
+    & > div {
+      padding: 0 2rem;
+
+      @include for-size('only-phone') {
+        flex: 1;
+      }
+
+      @include for-size('tablet-portrait-up') {
+        flex-basis: 50%;
+      }
+    }
+  }
+}
+
+.compras {
+  max-width: 110rem;
+
+  margin: 0 auto;
+
+  & > div {
+    padding: 5rem 3rem;
+  }
+
+  ul {
+    list-style: none;
+  }
 }
