@@ -1,0 +1,19 @@
+.versiones {
+  &__box {
+    border: 1px solid transparent;
+
+    img {
+      width: 100%;
+      max-width: 15rem;
+    }
+
+    &--white {
+      background: white;
+    }
+
+    &--black {
+      background: black;
+      border-color: rgb(179, 172, 172);
+    }
+  }
+}

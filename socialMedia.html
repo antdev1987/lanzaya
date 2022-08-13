@@ -19,16 +19,13 @@
       rel="stylesheet"
     />
 
-    <!-- js -->
-    <script src="js/toggleoverflow.js" defer></script>
-
     <!-- Fonts -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
-  <body id="nav">
-    <nav class="blockNav bg-green">
+  <body>
+    <nav class="blockNav bg-green" id="nav">
       <div class="container blockNav__box">
         <img src="images/logo/b_lanzaya.png" alt="" class="blockNav__logo" />
         <ul>
@@ -79,58 +76,45 @@
           <a href="#nav" class="hamburguer__open">
             <img src="images/nav/menu.svg" alt="" />
           </a>
-          <a href="#" class="hamburguer__close"
+          <a href="#closenav" class="hamburguer__close"
             ><img src="images/nav/close.svg" alt=""
           /></a>
         </div>
       </div>
     </nav>
 
-    <header class="socialMediaHeader pY-10">
-      <div class="container text-center">
-        <img src="" alt="" />
+    <header class="header bg-multicolor">
+      <div class="container d-flex align-items-center flex-direction-column row-medium gap-5">
+        <div class="flex-1 fs-2 line-height-md">
+          <h3 class="c-main">Crea un vínculo único con tus clientes</h3>
+          <h2 class="c-secondary">
+            Convertimos tus redes sociales en una extensión de tu negocio
+          </h2>
 
-        <a
-          href="#"
-          class="btn flexContainer__box--radius-big bg-blue-main c-white text-transform-uppercase pY-2 pX-3 fs-3"
-        >
-          Cuéntanos tu proyecto
-        </a>
+          <p class="mT-3">
+            Consigue atraer y retener la atención de tus clientes para que te
+            tengan siempre presente
+          </p>
+
+          <a
+            href="#"
+            class="btn flexContainer__box--radius-big bg-blue-main c-white text-transform-uppercase fs-2 pY-1 pX-2 mT-3"
+          >
+            empieza hoy mismo
+          </a>
+        </div>
+
+        <div class="flex-1 text-center">
+          <img
+            src="images/socialMedia/social_media.jpg"
+            alt=""
+            loading="lazy"
+            class="w-100"
+          />
+        </div>
       </div>
     </header>
     <!-- header finished -->
-
-    <section
-      class="container d-flex align-items-center flex-direction-column row-medium gap-5 mT-9"
-    >
-      <div class="flex-1 fs-2 line-height-md">
-        <h3 class="c-main">Crea un vínculo único con tus clientes</h3>
-        <h2 class="c-secondary">
-          Convertimos tus redes sociales en una extensión de tu negocio
-        </h2>
-
-        <p class="mT-3">
-          Consigue atraer y retener la atención de tus clientes para que te
-          tengan siempre presente
-        </p>
-
-        <a
-          href="#"
-          class="btn flexContainer__box--radius-big bg-blue-main c-white text-transform-uppercase fs-2 pY-1 pX-2 mT-3"
-        >
-          empieza hoy mismo
-        </a>
-      </div>
-
-      <div class="flex-1 text-center">
-        <img
-          src="images/socialMedia/social_media.jpg"
-          alt=""
-          loading="lazy"
-          class="w-100"
-        />
-      </div>
-    </section>
 
     <section
       class="container d-flex align-items-center flex-direction-column row-medium gap-3 mT-9"
@@ -504,7 +488,9 @@
               <h2 class="c-white text-transform-uppercase fs-3">
                 paquete nautilus
               </h2>
-              <h3 class="c-white fs-md fw-300">Para alcanzar velocidad de crucero</h3>
+              <h3 class="c-white fs-md fw-300">
+                Para alcanzar velocidad de crucero
+              </h3>
 
               <p
                 class="d-inline-block bg-white flexContainer__box--radius-big fs-2 pY-1 pX-2 mT-1"
@@ -564,7 +550,7 @@
 
               <li class="text-center c-white mT-5">
                 <h2 class="fs-3">
-                  450€/mes + <span class="fw-300">150 de alta</span>
+                  650€/mes + <span class="fw-300">150 de alta</span>
                 </h2>
               </li>
             </ul>

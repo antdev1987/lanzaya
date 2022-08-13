@@ -15,31 +15,6 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
-  --state-open: scale(1);
-  --state-close: scale(0);
-  --links: translate(100%);
-}
-body:target {
-  --active: none;
-  --state-open: scale(0);
-  --state-close: scale(1);
-  --links: translate(0);
-  overflow: hidden;
-}
-@media (min-width: 500px) {
-  body:target {
-    --links: translate(50%);
-  }
-}
-@media (min-width: 900px) {
-  body:target {
-    --links: unset;
-  }
-}
-@media (min-width: 900px) {
-  body {
-    --links: unset;
-  }
 }
 
 .container {
@@ -67,6 +42,11 @@ body:target {
     flex-direction: row !important;
     justify-content: space-around;
   }
+}
+
+.header {
+  padding-top: 12rem;
+  padding-bottom: 3rem;
 }
 
 .pT-5 {
@@ -300,6 +280,10 @@ body:target {
   font-weight: bold;
 }
 
+.c-black {
+  color: #000;
+}
+
 .c-white {
   color: #fff !important;
 }
@@ -341,7 +325,7 @@ body:target {
 }
 
 .bg-multicolor {
-  background: url(../../images/aplicaionesMoviles/fondo1.jpg) no-repeat center center/cover;
+  background: url(../images/aplicaionesMoviles/fondo1.jpg) no-repeat center center/cover;
 }
 
 .bg-blue-green {
@@ -357,7 +341,7 @@ body:target {
 }
 
 .bg-ya {
-  background: url("../../images/aplicaionesMoviles/fondo2.jpg") no-repeat center center/cover;
+  background: url("../images/aplicaionesMoviles/fondo2.jpg") no-repeat center center/cover;
 }
 
 .bg-green-light {
@@ -414,15 +398,6 @@ body:target {
 
 .border-radius-2 {
   border-radius: 2rem;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-@media (min-width: 900px) {
-  .overflow-hidden {
-    overflow: unset;
-  }
 }
 
 .gridSystem {
@@ -493,6 +468,35 @@ body:target {
   }
 }
 
+.blockNav {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  --state-open: scale(1);
+  --state-close: scale(0);
+  --links: translate(100%);
+}
+.blockNav:target {
+  --active: none;
+  --state-open: scale(0);
+  --state-close: scale(1);
+  --links: translate(0);
+}
+@media (min-width: 500px) {
+  .blockNav:target {
+    --links: translate(50%);
+  }
+}
+@media (min-width: 900px) {
+  .blockNav:target {
+    --links: unset;
+  }
+}
+@media (min-width: 900px) {
+  .blockNav {
+    --links: unset;
+  }
+}
 .blockNav__box {
   display: flex;
   justify-content: space-between;
@@ -783,6 +787,26 @@ body:target {
   height: 20rem;
 }
 
+.versiones__box {
+  border: 1px solid transparent;
+}
+.versiones__box img {
+  width: 100%;
+  max-width: 15rem;
+}
+.versiones__box--white {
+  background: white;
+}
+.versiones__box--black {
+  background: black;
+  border-color: rgb(179, 172, 172);
+}
+
+.accede {
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+
 .tipoAplicaciones__img {
   height: 10rem;
 }
@@ -804,8 +828,19 @@ body:target {
   display: unset;
 }
 
+.estadisticas {
+  position: relative;
+}
+.estadisticas video {
+  z-index: -1;
+}
+
 .socialMediaHeader {
-  background: url(../../images/socialMedia/fondo\ 1.jpg) no-repeat bottom center/cover;
+  background: url(../images/socialMedia/fondo\ 1.jpg) no-repeat bottom center/cover;
+}
+.socialMediaHeader__logo {
+  width: 100%;
+  max-width: 50rem;
 }
 
 .abrigo__content {
@@ -827,13 +862,18 @@ body:target {
 
 .compras {
   max-width: 110rem;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 .compras > div {
   padding: 5rem 3rem;
 }
 .compras ul {
   list-style: none;
+}
+.compras .crown {
+  width: 100%;
+  max-width: 20rem;
 }
 
 .footer__containet.d-flex {

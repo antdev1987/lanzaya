@@ -30,7 +30,15 @@
   }
 }
 
+// header
+.header {
+  padding-top: 12rem;
+
+  padding-bottom: 3rem;
+}
+
 //! Paddings
+
 .pT-5 {
   padding-top: 5rem;
 }
@@ -256,6 +264,10 @@
   font-weight: bold;
 }
 // ! Color
+.c-black {
+  color: $c-black-dark;
+}
+
 .c-white {
   color: $c-white !important;
 }
@@ -297,7 +309,7 @@
 }
 
 .bg-multicolor {
-  background: url(../../images/aplicaionesMoviles/fondo1.jpg) no-repeat center
+  background: url(../images/aplicaionesMoviles/fondo1.jpg) no-repeat center
     center / cover;
 }
 
@@ -311,11 +323,12 @@
 }
 
 .bg-black-2 {
-  background: url(../images/socialMedia/fondo\ 3.jpg) no-repeat center center / cover;
+  background: url(../images/socialMedia/fondo\ 3.jpg) no-repeat center center /
+    cover;
 }
 
 .bg-ya {
-  background: url('../../images/aplicaionesMoviles/fondo2.jpg') no-repeat center
+  background: url('../images/aplicaionesMoviles/fondo2.jpg') no-repeat center
     center / cover;
 }
 
@@ -380,14 +393,4 @@
 
 .border-radius-2 {
   border-radius: 2rem;
-}
-
-// ! overflow
-
-.overflow-hidden {
-  overflow: hidden;
-
-  @include for-size('tablet-landscape-up') {
-    overflow: unset;
-  }
 }

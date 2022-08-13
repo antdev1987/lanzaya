@@ -20,15 +20,12 @@
     />
     <!-- Fonts -->
 
-    <!-- script -->
-    <script src="js/toggleoverflow.js" defer></script>
-    
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
-  <body id="nav">
-    <nav class="blockNav bg-green">
+  <body>
+    <nav class="blockNav bg-green" id="nav">
       <div class="container blockNav__box">
         <img src="images/logo/b_lanzaya.png" alt="" class="blockNav__logo" />
         <ul>
@@ -79,14 +76,14 @@
           <a href="#nav" class="hamburguer__open">
             <img src="images/nav/menu.svg" alt="" />
           </a>
-          <a href="#" class="hamburguer__close"
+          <a href="#closenav" class="hamburguer__close"
             ><img src="images/nav/close.svg" alt=""
           /></a>
         </div>
       </div>
     </nav>
 
-    <header class="bg-multicolor pY-5">
+    <header class="accede bg-multicolor">
       <div class="container text-center">
         <div class="fs-2 columns__content">
           <h2 class="fw-300">
@@ -102,12 +99,12 @@
 
           <a
             href="#"
-            class="btn btn--radiusBig bg-blue-main pX-3 pY-1 c-white fs-md fw-600 mT-5"
+            class="btn btn--radiusBig bg-blue-main pX-3 pY-2 c-white fs-3 mT-5"
           >
-            <span class="fw-300 text-transform-uppercase">
-              CUéNTANOS TU IDEA
-            </span>
-            <span class="d-block fs-1">y empezaremos a trabajar hoy mismo</span>
+            <span class="text-transform-uppercase"> CUéNTANOS TU IDEA </span>
+            <span class="d-block fs-small">
+              y empezaremos a trabajar hoy mismo</span
+            >
           </a>
         </div>
       </div>
@@ -115,7 +112,7 @@
     <!-- header finished -->
 
     <section
-      class="container d-flex align-items-center flex-direction-column row-medium gap-5 mT-9"
+      class="estadisticas container d-flex align-items-center flex-direction-column row-medium gap-5 mT-9"
     >
       <div class="flex-1">
         <p class="fs-2 line-height-md">
@@ -140,6 +137,7 @@
           muted
           autoplay
           loop
+          playsinline
           class="w-100"
         ></video>
 
@@ -239,7 +237,7 @@
       </div>
     </section>
 
-    <section class="tipoAplicaciones bg-black pY-8">
+    <section class="tipoAplicaciones bg-black-2 pY-8">
       <div class="container">
         <div class="text-center">
           <h2 class="c-white fs-4 fw-300 text-transform-uppercase">
@@ -563,7 +561,7 @@
 
       <a
         href="#"
-        class="d-inline-block btn--radiusBig bg-multicolor c-white text-transform-uppercase text-decoration-none fs-3 pX-2 pY-2 mT-3"
+        class="d-inline-block btn--radiusBig btn--multicolor c-white text-transform-uppercase text-decoration-none fs-3 pX-2 pY-2 mT-3"
       >
         os cuento mi proyecto
       </a>

@@ -18,8 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@300;600&display=swap"
       rel="stylesheet"
     />
-
     <!-- Fonts -->
+
+    <!-- script -->
+    <script src="js/toggleoverflow.js" defer></script>
+
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
@@ -86,72 +89,234 @@
     <header class="bg-multicolor pY-5">
       <div class="container">
         <div
-          class="bg-white d-flex flex-direction-column row-landscape align-items-center flexContainer__box--radius-big gap-5 mT-2 pY-5 pX-5"
+          class="d-flex flex-direction-column row-landscape align-items-center gap-5 mT-2 pY-5 pX-5"
         >
           <div class="columns__box">
             <div class="fs-2 columns__content">
-              <h1 class="c-main fw-300 text-transform-uppercase">
-                Diseñamos <span class="fw-bold">un funnel</span> para tu negocio
-                <span class="fw-bold"
-                  >que generará leads en piloto automático</span
-                >
+              <h1 class="fs-md fw-300 text-transform-uppercase">
+                Convertimos el proyecto de tus sueños en una realidad.
               </h1>
 
-              <h3 class="fw-300 mT-5">
-                Ayudamos a proyectos como el tuyo a aumentar su volumen de
-                clientes de forma orgánica y pasiva.
-              </h3>
+              <h3 class="fs-4">Consultora digital integral</h3>
+
+              <h2 class="fw-300 mT-1">
+                Hacemos que tu negocio vaya en la dirección que quieres.
+              </h2>
 
               <a
                 href="#"
-                class="btn btn--radiusBig btn--box-shadow bg-green-dark pX-3 pY-1 c-white fs-md fw-600 mT-5"
+                class="btn btn--radiusBig btn--box-shadow bg-blue-main pX-3 pY-1 c-white text-transform-uppercase fs-md fw-600 mT-5"
               >
-                Empieza a funnelizar hoy mismo
+                ¿Por dónde quieres empezar?
               </a>
             </div>
           </div>
           <div class="columns__box">
-            <div style="height: 40rem; width: 100%; background: grey"></div>
+            <img src="images/home/infografía.png" alt="" class="w-100" />
           </div>
         </div>
       </div>
     </header>
     <!-- header finished -->
 
-    <section
-      class="container d-flex align-items-center flex-direction-column row-medium gap-5 mT-9"
-    >
-      <div class="flex-1 text-center">
-        <img
-          src="images/funnel/funnel-14.jpg"
-          alt=""
-          loading="lazy"
-          class="w-100"
-        />
+    <section class="container pY-8 mT-5">
+      <div class="text-center">
+        <h2 class="c-secondary fs-4">
+          ¿Cómo vamos a ayudaros a ti y a tu negocio?
+        </h2>
       </div>
-      <div class="flex-1 fs-2 line-height-md">
-        <p>
-          Podemos decir que un funnel es como esa carretera que va a llevar a
-          los potenciales clientes que lleguen a tu web hasta el botón de “Pagar
-          Ahora”.
-        </p>
+      <div class="d-flex flex-direction-column row-landscape gap-3 mT-5">
+        <!-- Box -->
+        <div
+          class="flexContainer__box flexContainer__box--radius-big pX-2 pY-3 text-center"
+        >
+          <img
+            src="images/home/identidad-corporativa.jpg"
+            alt=""
+            class="flexContainer__img"
+          />
+          <h2 class="c-main text-transform-uppercase fs-md mT-3">
+            identidad corporativa
+          </h2>
+          <p class="mT-2 fs-small fw-300">
+            Logramos que tus clientes conozcan, confíen y recomienden tu marca.
+          </p>
+        </div>
+        <!-- Box -->
 
-        <p class="mT-2">
-          Su objetivo es convertir el máximo número posible de visitas en
-          clientes a través de un itinerario que habremos definido para ti y que
-          funcionará de forma automática.
-        </p>
+        <!-- Box -->
+        <div
+          class="flexContainer__box flexContainer__box--radius-big pX-2 pY-3 text-center"
+        >
+          <img
+            src="images/home/actualizacion.png"
+            alt=""
+            class="flexContainer__img"
+          />
+          <h2 class="c-main text-transform-uppercase fs-md mT-3">
+            Desarrollo de Aplicaciones
+          </h2>
+          <p class="mT-2 fs-small fw-300">
+            Te abrimos las puertas al mercado con más usuarios del mundo.
+          </p>
+        </div>
+        <!-- Box -->
+
+        <!-- Box -->
+        <div
+          class="flexContainer__box flexContainer__box--radius-big pX-2 pY-3 text-center"
+        >
+          <img
+            src="images/home/software.jpg"
+            alt=""
+            class="flexContainer__img"
+          />
+          <h2 class="c-main text-transform-uppercase fs-md mT-3">
+            Desarrollo de Software a Medida
+          </h2>
+          <p class="mT-2 fs-small fw-300">
+            Creamos un software único pensando en las necesidades de tu negocio.
+          </p>
+        </div>
+        <!-- Box -->
+      </div>
+
+      <div class="d-flex flex-direction-column row-landscape gap-3 mT-5">
+        <!-- Box -->
+        <div
+          class="flexContainer__box flexContainer__box--radius-big pX-2 pY-3 text-center"
+        >
+          <img
+            src="images/home/social-media.jpg"
+            alt=""
+            class="flexContainer__img"
+          />
+          <h2 class="c-main text-transform-uppercase fs-md mT-3">
+            social media
+          </h2>
+          <p class="mT-2 fs-small fw-300">
+            Logramos que tus clientes conozcan, confíen y recomienden tu marca.
+          </p>
+        </div>
+        <!-- Box -->
+
+        <!-- Box -->
+        <div
+          class="flexContainer__box flexContainer__box--radius-big pX-2 pY-3 text-center"
+        >
+          <img
+            src="images/home/tienda-online.jpg"
+            alt=""
+            class="flexContainer__img"
+          />
+          <h2 class="c-main text-transform-uppercase fs-md mT-3">
+            tienda online
+          </h2>
+          <p class="mT-2 fs-small fw-300">
+            Te abrimos las puertas al mercado con más usuarios del mundo.
+          </p>
+        </div>
+        <!-- Box -->
+
+        <!-- Box -->
+        <div
+          class="flexContainer__box flexContainer__box--radius-big pX-2 pY-3 text-center"
+        >
+          <img src="images/home/funnel.jpg" alt="" class="flexContainer__img" />
+          <h2 class="c-main text-transform-uppercase fs-md mT-3">funnel</h2>
+          <p class="mT-2 fs-small fw-300">
+            Creamos un software único pensando en las necesidades de tu negocio.
+          </p>
+        </div>
+        <!-- Box -->
+      </div>
+
+      <div class="text-center">
+        <a
+          href="#"
+          class="btn btn--radiusBig btn--box-shadow bg-blue-main pX-3 pY-1 c-white fs-md fw-600 mT-5"
+        >
+          cuéntanos tu proyecto
+        </a>
+      </div>
+    </section>
+
+    <section class="tipoAplicaciones bg-black-2 pY-8">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="c-white fs-4 fw-300 text-transform-uppercase">
+            ¿Qué tipo de aplicaciones desarrollamos?
+          </h2>
+          <h3 class="c-white fw-300 fs-md">
+            Desarrollamos tu aplicación para que se pueda utilizar en las
+            plataformas donde estén presentes tus clientes:
+          </h3>
+        </div>
+
+        <div
+          class="d-flex justify-content-around flex-direction-column row-medium gap-5 mT-5"
+        >
+          <div class="text-center">
+            <img
+              src="images/home/Recurso 3.png"
+              alt=""
+              class="flexContainer__img--md"
+            />
+
+            <h2 class="c-main text-transform-uppercase fs-3 mT-2">
+              simplicidad
+            </h2>
+
+            <p class="c-white line-height-md fs-small mT-2">
+              Queremos hacer tu vida algo más sencilla, por eso buscamos que la
+              solución tecnológica que te ofrezcamos sea fácil de utilizar y de
+              implementar.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="images/home/Recurso 2.png"
+              alt=""
+              class="flexContainer__img--md"
+            />
+
+            <h2 class="c-main text-transform-uppercase fs-3 mT-2">
+              Eficiencia
+            </h2>
+
+            <p class="c-white line-height-md fs-small mT-2">
+              Al implementar nuestros servicios en tu negocio buscamos que
+              rindan al máximo con el menor uso de recursos posible.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="images/home/Recurso 1.png"
+              alt=""
+              class="flexContainer__img--md"
+            />
+
+            <h2 class="c-main text-transform-uppercase fs-3 mT-2">
+              Rentabilidad
+            </h2>
+
+            <p class="c-white line-height-md fs-small mT-2">
+              Intentamos que obtengas el mayor retorno posible con esa inversión
+              que haces en nosotros… ¡En el menor tiempo posible!
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="bg-ya mT-9 pX-2">
-      <!--title -->
       <div class="text-center container">
-        <h2 class="fs-3 text-transform-uppercase">
-          ¿Cómo conseguimos crear un funnel que convierte clicks en ventas?
+        <h2 class="fs-4 text-transform-uppercase">
+          ¿Cómo vamos a desarrollar tu aplicación?
         </h2>
       </div>
-      <!--title -->
 
       <!-- Fase 1 Start -->
       <div
@@ -168,16 +333,15 @@
                 Conocer tu proyecto
               </h2>
 
-              <p class="line-height-md fw-bold mT-3">
-                Queremos conocer cuáles son tus objetivos y que nos hables de tu
-                cliente ideal para entender sus problemas y ofrecerle una
-                solución.
+              <p class="line-height-md mT-3">
+                Hablaremos de las necesidades que tienes y veremos cuál es la
+                mejor manera de resolverlas para impulsar tu proyecto.
               </p>
             </div>
           </div>
           <div class="columns__box columns__box--2">
             <img
-              src="images/desarrolloSoftware/conceptualizacion.png"
+              src="images/home/conocenos.png"
               alt=""
               class="columns__img"
               loading="lazy"
@@ -199,24 +363,22 @@
               </h3>
 
               <h2 class="font-jost mT-3 fs-4 text-transform-uppercase">
-                Diseño
+                Evaluación
               </h2>
 
               <div class="mT-3 line-height-md">
                 <p>
-                  Diseñaremos el camino que tu cliente seguirá hasta que se
-                  encuentre con una solución de pago a sus problemas.
+                  Nuestro equipo técnico hará un estudio para ver de dónde
+                  partimos y cuál es la mejor manera de llegar a tus objetivos.
+                  Estableceremos un plan estratégico y haremos que todo empiece
+                  a funcionar.
                 </p>
               </div>
             </div>
           </div>
 
           <div class="columns__box columns__box--2">
-            <img
-              src="images/desarrolloSoftware/diseño.png"
-              alt=""
-              class="columns__img"
-            />
+            <img src="images/home/analisis.png" alt="" class="columns__img" />
           </div>
         </div>
       </div>
@@ -234,19 +396,20 @@
               </h3>
 
               <h2 class="font-jost c-main mT-3 fs-4 text-transform-uppercase">
-                Implementación
+                Creación
               </h2>
 
               <p class="mT-3">
-                Implementamos en tu web ese conjunto de pasos que van llevando a
-                tu cliente ideal desde una búsqueda genérica hasta el botón de
-                ‘Pagar’.
+                Implementaremos el plan estratégico que diseñamos para tu caso
+                concreto con el objetivo de resolver esas necesidades que tenía
+                tu proyecto. Esta fase termina cuando todo está integrado y
+                funcionando.
               </p>
             </div>
           </div>
           <div class="columns__box columns__box--2">
             <img
-              src="images/desarrolloSoftware/desarrollo.png"
+              src="images/home/creacion.png"
               alt=""
               class="columns__img"
               loading="lazy"
@@ -257,9 +420,9 @@
       <!-- Fase 3 End -->
 
       <!-- Fase 4 Start -->
-      <div class="container mT-5">
+      <div class="container bg-green pY-2 pX-5 border-radius-2 mT-5">
         <div
-          class="bg-green pY-2 pX-5 border-radius-2 d-flex align-items-center flex-direction-reverse columns gap-5"
+          class="d-flex align-items-center flex-direction-reverse columns gap-5"
         >
           <div class="columns__box columns__box--1">
             <div class="fs-2 columns__content text-end c-white">
@@ -268,18 +431,17 @@
               </h3>
 
               <h2 class="font-jost mT-3 fs-4 text-transform-uppercase">
-                Estadísticas
+                Actualización
               </h2>
 
               <h3 class="fw-300 mT-3 line-height-md">
-                Recopilamos toda la información que genere el funnel para
-                pulirlo aún más y mantenerlo actualizado.
+                Para asegurarnos de que todo sigue funcionando a la perfección.
               </h3>
             </div>
           </div>
           <div class="columns__box columns__box--2">
             <img
-              src="images/desarrolloSoftware/testeo.png"
+              src="images/home/actualizacion.png"
               alt=""
               class="columns__img"
             />
@@ -287,99 +449,23 @@
         </div>
       </div>
       <!-- Fase 4 End -->
-
-      <!-- Fase 5 Start -->
-      <div
-        class="container mT-5 pY-2 pX-5 bg-white border-dark border-radius-2"
-      >
-        <div class="d-flex align-items-center gap-5 columns">
-          <div class="columns__box columns__box--1">
-            <div class="fs-2 columns__content">
-              <h3 class="font-jost c-main text-transform-uppercase fs-3 fw-300">
-                fase 5
-              </h3>
-
-              <h2 class="font-jost c-main mT-3 fs-4 text-transform-uppercase">
-                Optimización
-              </h2>
-
-              <p class="mT-3">
-                Te daremos la opción de optimizar tu funnel para que tu número
-                de ventas siga aumentando hasta el infinito y más allá.
-              </p>
-            </div>
-          </div>
-          <div class="columns__box columns__box--2">
-            <img
-              src="images/desarrolloSoftware/lanzamiento.png"
-              alt=""
-              class="columns__img"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </div>
-      <!-- Fase 5 End -->
     </section>
 
-    <section class="bg-multicolor pY-8 mT-9">
-      <div class="container text-center">
-        <h2 class="fs-3 fw-300">
-          Si quieres empezar a generar tráfico de calidad lo antes posible,
-          <span class="d-block fw-bold">rellena este formulario:</span>
-        </h2>
-
-        <a
-          href="#"
-          class="btn flexContainer__box--radius-big bg-green-dark c-white text-transform-uppercase fs-md pY-2 pX-2 mT-5"
-          >os cuento de mi proyecto</a
-        >
-      </div>
-    </section>
-
-    <section class="mT-9">
-      <div class="container text-center">
-        <h2 class="c-secondary fs-3">
-          ¿Cómo contar con un buen funnel va a impulsar tu proyecto?
-        </h2>
-      </div>
-
-      <picture>
-        <source
-          srcset="images/funnel/infografia.jpg"
-          media="(min-width: 900px)"
-        />
-
-        <img
-          src="images/funnel/infografiaresponsive.jpg"
-          alt=""
-          class="d-block w-100 mT-9"
-        />
-      </picture>
-    </section>
-
-    <section class="container text-center mT-9">
-      <h2 class="c-main fs-3">
-        El funnel va estar trabajando automáticamente por ti.
+    <div class="container text-center mT-9">
+      <h2 class="fw-300 fs-3">
+        Si quieres que empecemos a trabajar en tu proyecto
+        <span class="d-block fw-bold">
+          ¿por qué no nos cuentas qué necesitas?
+        </span>
       </h2>
-
-      <p class="line-height-md fs-3 mT-3">
-        Convertirá visitas en clientes incluso cuando tú estés durmiendo y
-        creará una lista de contactos de clientes interesados en tus productos
-        para que puedas enviarles ofertas irresistibles.
-      </p>
-
-      <p class="fs-3 mT-3">
-        El resultado de todo será un aumento de tus ventas.
-      </p>
 
       <a
         href="#"
-        class="btn flexContainer__box--radius-big bg-blue-green c-white fs-md pX-2 pY-2 mT-5"
+        class="d-inline-block btn--radiusBig btn--multicolor c-white text-transform-uppercase text-decoration-none fs-3 pX-2 pY-2 mT-3"
       >
-        Empieza tu funnel hoy mismo
+        os cuento mi proyecto
       </a>
-    </section>
+    </div>
 
     <footer class="footer bg-black pY-5 mT-9">
       <div class="container">
