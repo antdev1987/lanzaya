@@ -192,6 +192,15 @@ body {
   justify-content: center;
 }
 
+.align-items-start {
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .align-items-start {
+    align-items: flex-start;
+  }
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -292,6 +301,10 @@ body {
   color: #4dceb5;
 }
 
+.c-dark-blue {
+  color: #001781;
+}
+
 .c-secondary {
   color: #04a777;
 }
@@ -302,6 +315,10 @@ body {
 
 .c-blue-secondary {
   color: #3c66b9;
+}
+
+.c-black-dark {
+  color: #000;
 }
 
 .bg-white {
@@ -324,6 +341,14 @@ body {
   background-color: #3c66b9;
 }
 
+.bg-light-blue {
+  background-color: #C6DBF6;
+}
+
+.bg-blue-dark {
+  background-color: #001781;
+}
+
 .bg-multicolor {
   background: url(../images/aplicaionesMoviles/fondo1.jpg) no-repeat center center/cover;
 }
@@ -338,6 +363,10 @@ body {
 
 .bg-black-2 {
   background: url(../images/socialMedia/fondo\ 3.jpg) no-repeat center center/cover;
+}
+
+.bg-black-ya {
+  background: url(../../images/tienda/fondo_2.jpg) no-repeat center center/cover;
 }
 
 .bg-ya {
@@ -871,9 +900,21 @@ body {
 .compras ul {
   list-style: none;
 }
-.compras .crown {
+
+.crown {
   width: 100%;
   max-width: 20rem;
+}
+
+.tienda__img {
+  max-width: 40rem;
+}
+.tienda__logo {
+  width: 100%;
+  max-width: 10rem;
+}
+.tienda__logo--coloso {
+  max-width: 13rem;
 }
 
 .footer__containet.d-flex {

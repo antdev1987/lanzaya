@@ -4,10 +4,10 @@
   background: url(../images/socialMedia/fondo\ 1.jpg) no-repeat bottom center /
     cover;
 
-    &__logo {
-      width: 100%;
-      max-width: 50rem;
-    }
+  &__logo {
+    width: 100%;
+    max-width: 50rem;
+  }
 }
 
 .abrigo {
@@ -41,9 +41,9 @@
   ul {
     list-style: none;
   }
+}
 
-  .crown {
-    width: 100%;
-    max-width: 20rem;
-  }
+.crown {
+  width: 100%;
+  max-width: 20rem;
 }

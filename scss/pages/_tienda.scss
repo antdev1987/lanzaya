@@ -1,0 +1,14 @@
+.tienda {
+  &__img {
+    max-width: 40rem;
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 10rem;
+
+    &--coloso {
+        max-width: 13rem;
+    }
+  }
+}

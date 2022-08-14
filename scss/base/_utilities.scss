@@ -174,6 +174,14 @@
   justify-content: center;
 }
 
+.align-items-start {
+  
+  align-items: center;
+  @include for-size('tablet-landscape-up'){
+    align-items: flex-start;
+  }
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -276,6 +284,10 @@
   color: $c-green;
 }
 
+.c-dark-blue {
+  color: $dark-blue;
+}
+
 .c-secondary {
   color: $c-green-dark;
 }
@@ -286,6 +298,10 @@
 
 .c-blue-secondary {
   color: $sedoncary-blue;
+}
+
+.c-black-dark {
+  color: $c-black-dark;
 }
 // ! bg
 .bg-white {
@@ -308,6 +324,14 @@
   background-color: $sedoncary-blue;
 }
 
+.bg-light-blue {
+  background-color: $light-blue;
+}
+
+.bg-blue-dark {
+  background-color: $dark-blue;
+}
+
 .bg-multicolor {
   background: url(../images/aplicaionesMoviles/fondo1.jpg) no-repeat center
     center / cover;
@@ -324,6 +348,11 @@
 
 .bg-black-2 {
   background: url(../images/socialMedia/fondo\ 3.jpg) no-repeat center center /
+    cover;
+}
+
+.bg-black-ya {
+  background: url(../../images/tienda/fondo_2.jpg) no-repeat center center /
     cover;
 }
 
