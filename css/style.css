@@ -618,7 +618,6 @@ body {
 }
 .blockNav__box > ul .dropdown:hover .dropdown__content {
   display: grid;
-  max-height: 9999px;
 }
 .blockNav__logo {
   height: 5rem;
