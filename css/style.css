@@ -136,6 +136,10 @@ body {
   margin-top: 3rem !important;
 }
 
+.mT-4 {
+  margin-top: 4rem !important;
+}
+
 .mT-5 {
   margin-top: 5rem !important;
 }
@@ -327,6 +331,14 @@ body {
 
 .bg-green {
   background-color: #4dceb5;
+}
+
+.bg-green2 {
+  background-color: #95E0CC;
+}
+
+.bg-green-darker {
+  background-color: #00CFB5;
 }
 
 .bg-green-dark {
@@ -813,6 +825,32 @@ body {
 }
 .flexContainer__img--conseguiremos {
   height: 20rem;
+}
+
+.combo .box__bono {
+  margin-top: 2rem;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .combo .box__bono {
+    margin-top: unset;
+    text-align: end;
+  }
+}
+
+.comprarAhora {
+  position: relative;
+}
+.comprarAhora::after {
+  content: "";
+  background: #4dceb5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 40rem;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .versiones__box {

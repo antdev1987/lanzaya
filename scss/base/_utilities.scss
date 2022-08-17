@@ -116,6 +116,10 @@
   margin-top: 3rem !important;
 }
 
+.mT-4 {
+  margin-top:4rem !important;
+}
+
 .mT-5 {
   margin-top: 5rem !important;
 }
@@ -310,6 +314,14 @@
 
 .bg-green {
   background-color: $c-green;
+}
+
+.bg-green2 {
+  background-color: $green;
+}
+
+.bg-green-darker {
+  background-color: $c-green-darker;
 }
 
 .bg-green-dark {
