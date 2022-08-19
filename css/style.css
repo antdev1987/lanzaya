@@ -614,6 +614,7 @@ body {
   gap: 2rem;
   transition: max-height 0.5s ease-in-out;
   padding-left: 3rem;
+  backdrop-filter: blur(0.5rem);
 }
 @media (min-width: 900px) {
   .blockNav__box > ul .dropdown__content {
@@ -624,7 +625,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     transform: translate(-30rem);
     padding: 5rem 3rem 2rem 3rem;
-    width: 450px;
+    width: 500px;
   }
 }
 .blockNav__box > ul .dropdown__content a {
@@ -956,6 +957,64 @@ body {
 }
 .tienda__logo--coloso {
   max-width: 13rem;
+}
+
+.sobreNosotros {
+  padding-bottom: 10rem;
+}
+.sobreNosotros img {
+  max-width: 30rem;
+}
+
+.team__content {
+  position: relative;
+  z-index: 10;
+}
+.team__caraousel .slick-track {
+  position: relative;
+}
+.team__caraousel .slick-track .slick-slide {
+  margin: 0 2rem;
+}
+.team__box {
+  background: black;
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+.team__box header {
+  background: rgba(77, 206, 181, 0.8);
+  backdrop-filter: blur(1rem);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.team__arrows {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: #4dceb5;
+  list-style: none;
+}
+.team__arrows > * {
+  cursor: pointer;
+}
+.team__arrows--right {
+  right: -1rem;
+}
+.team__arrows--left {
+  left: -1rem;
+}
+@media (min-width: 600px) {
+  .team__arrows {
+    display: flex;
+  }
 }
 
 .footer__containet.d-flex {

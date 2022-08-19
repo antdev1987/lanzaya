@@ -107,6 +107,8 @@
           transition: max-height 0.5s ease-in-out;
           padding-left: 3rem;
 
+          backdrop-filter: blur(.5rem);
+
           @include for-size('tablet-landscape-up') {
             max-height: unset;
             position: absolute;
@@ -115,7 +117,7 @@
             grid-template-columns: repeat(2, 1fr);
             transform: translate(-30rem);
             padding: 5rem 3rem 2rem 3rem;
-            width: 450px;
+            width: 500px;
           }
 
           a {

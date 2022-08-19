@@ -1,0 +1,82 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+
+.sobreNosotros {
+  padding-bottom: 10rem;
+
+  img {
+    max-width: 30rem;
+  }
+}
+
+.team {
+
+  &__content {
+    position: relative;
+
+    z-index: 10;
+  }
+
+  &__caraousel {
+    .slick-track {
+      position: relative;
+
+      .slick-slide {
+        margin: 0 2rem;
+      }
+    }
+  }
+
+  &__box {
+    background: black;
+
+    position: relative;
+    height: 500px;
+    width: 100%;
+
+    header {
+      background: rgba($c-green, .8);
+      backdrop-filter: blur(1rem);
+
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+
+      text-align: center;
+
+      padding: 2rem 1rem;
+    }
+  }
+
+  &__arrows {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    color: $c-green;
+
+    list-style: none;
+
+    & > * {
+      cursor: pointer;
+    }
+
+    &--right {
+        right: -1rem;
+    }
+
+    &--left {
+        left: -1rem;
+    }
+
+    @include for-size(600px) {
+        display: flex;
+    }
+  }
+}
