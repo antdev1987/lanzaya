@@ -5,9 +5,11 @@
 @use "layout/topNav";
 
 @use 'components/btn';
+@use 'components/cartaPago';
 @use 'components/title';
 @use 'components/columns';
 @use 'components/flexContainer';
+@use 'components/modal';
 
 @use 'pages/desarrolloweb';
 @use 'pages/identidad';

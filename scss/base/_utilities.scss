@@ -39,6 +39,10 @@
 
 //! Paddings
 
+.pT-2 {
+  padding-top: 2rem;
+}
+
 .pT-5 {
   padding-top: 5rem;
 }
@@ -164,6 +168,10 @@
 
 .flex-direction-column {
   flex-direction: column;
+}
+
+.flex-direction-reverse-column {
+  flex-direction: column-reverse;
 }
 
 .justify-content-between {

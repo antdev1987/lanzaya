@@ -49,6 +49,10 @@ body {
   padding-bottom: 3rem;
 }
 
+.pT-2 {
+  padding-top: 2rem;
+}
+
 .pT-5 {
   padding-top: 5rem;
 }
@@ -182,6 +186,10 @@ body {
 
 .flex-direction-column {
   flex-direction: column;
+}
+
+.flex-direction-reverse-column {
+  flex-direction: column-reverse;
 }
 
 .justify-content-between {
@@ -685,6 +693,7 @@ body {
   text-decoration: none;
   text-align: center;
   border: none;
+  cursor: pointer;
 }
 .btn--radius {
   border-radius: 1rem;
@@ -700,6 +709,109 @@ body {
 }
 .btn--multicolor {
   background: linear-gradient(to right, #3981d9, #4dceb5);
+}
+
+.pago {
+  /* Rounded sliders */
+}
+.pago > .d-flex {
+  gap: 3rem;
+}
+@media (min-width: 500px) {
+  .pago > .d-flex {
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
+.pago__radioBox {
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+  row-gap: 2rem;
+}
+@media (min-width: 300px) {
+  .pago__radioBox {
+    grid-template-columns: repeat(6, 30px);
+  }
+}
+.pago__disabled {
+  color: #d1d3d1;
+}
+.pago__disabled .pago__inputRadio:checked::after {
+  content: "";
+  background-color: #d1d3d1;
+}
+.pago__inputRadio {
+  height: 15px;
+  width: 15px;
+  position: relative;
+}
+.pago__inputRadio::after {
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: white;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid #d1d3d1;
+}
+.pago__inputRadio:checked::after {
+  content: "";
+  background-color: #4dceb5;
+  border: 1px solid white;
+}
+.pago .switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+.pago .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.pago .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border: 1px solid #d1d3d1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.pago .slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  background-color: #d1d3d1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.pago input:checked + .slider:before {
+  background-color: #4dceb5;
+}
+.pago input:checked + .slider:before {
+  left: 55%;
+}
+.pago .slider.round {
+  border-radius: 34px;
+}
+.pago .slider.round:before {
+  border-radius: 50%;
+}
+.pago footer {
+  border-top: 1px solid #4dceb5;
 }
 
 .title {
@@ -830,6 +942,50 @@ body {
 }
 .flexContainer__img--conseguiremos {
   height: 20rem;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  align-items: center;
+  position: fixed; /* Stay in place */
+  z-index: 10001; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  padding: 2rem;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  padding: 8rem 5rem;
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .combo .box__bono {
