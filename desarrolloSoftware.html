@@ -23,6 +23,7 @@
     <!-- js -->
     <script src="js/changeInfo.js" defer></script>
     <script src="js/servicio.js" defer></script>
+    <script src="js/modal.js" defer></script>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="css/normalize.css" />
@@ -84,6 +85,254 @@
         </div>
       </div>
     </nav>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <form class="modal-content pago">
+        <span class="close">&times;</span>
+
+        <div class="d-flex flex-direction-reverse-column">
+          <div>
+            <h2 class="text-transform-uppercase font-jost fs-2">
+              Gestión de redes sociales
+            </h2>
+            <p class="line-height-md fs-small mT-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis modi magnam qui similique incidunt iure laborum
+              aperiam. Animi, tenetur in.
+            </p>
+
+            <ul class="pago__radioBox mT-2">
+              <!-- li start -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">1</label>
+                <input type="radio" name="select" class="pago__inputRadio" />
+              </li>
+              <!-- li end -->
+              <!-- li star -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">2</label>
+                <input
+                  type="radio"
+                  name="select"
+                  class="pago__inputRadio"
+                  checked
+                />
+              </li>
+              <!-- li end -->
+              <!-- li start -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">3</label>
+                <input type="radio" name="select" class="pago__inputRadio" />
+              </li>
+              <!-- li end -->
+              <!-- li start -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">4</label>
+                <input type="radio" name="select" class="pago__inputRadio" />
+              </li>
+              <!-- li end -->
+              <!-- li star -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">5</label>
+                <input type="radio" name="select" class="pago__inputRadio" />
+              </li>
+              <!-- li end -->
+              <!-- li start -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">6</label>
+                <input type="radio" name="select" class="pago__inputRadio" />
+              </li>
+              <!-- li end -->
+            </ul>
+          </div>
+
+          <div>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="d-flex flex-direction-reverse-column mT-3">
+          <div>
+            <h2 class="text-transform-uppercase font-jost fs-2">
+              post y copywrite semanal
+            </h2>
+            <p class="line-height-md fs-small mT-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis modi magnam qui similique incidunt iure laborum
+              aperiam. Animi, tenetur in.
+            </p>
+
+            <ul class="pago__radioBox mT-2">
+              <!-- li start -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">1</label>
+                <input
+                  type="radio"
+                  name="selectPost"
+                  class="pago__inputRadio"
+                />
+              </li>
+              <!-- li end -->
+              <!-- li star -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">2</label>
+                <input
+                  type="radio"
+                  name="selectPost"
+                  class="pago__inputRadio"
+                  checked
+                />
+              </li>
+              <!-- li end -->
+              <!-- li start -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">3</label>
+                <input
+                  type="radio"
+                  name="selectPost"
+                  class="pago__inputRadio"
+                />
+              </li>
+              <!-- li end -->
+              <!-- li start -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">4</label>
+                <input
+                  type="radio"
+                  name="selectPost"
+                  class="pago__inputRadio"
+                />
+              </li>
+              <!-- li end -->
+              <!-- li star -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">5</label>
+                <input
+                  type="radio"
+                  name="selectPost"
+                  class="pago__inputRadio"
+                />
+              </li>
+              <!-- li end -->
+              <!-- li start -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">6</label>
+                <input
+                  type="radio"
+                  name="selectPost"
+                  class="pago__inputRadio"
+                />
+              </li>
+              <!-- li end -->
+            </ul>
+          </div>
+
+          <div>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="pago__disabled d-flex flex-direction-reverse-column mT-3">
+          <div>
+            <h2 class="text-transform-uppercase font-jost fs-2">
+              plan trimestral
+            </h2>
+            <p class="line-height-md fs-small mT-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis modi magnam qui similique incidunt iure laborum
+              aperiam. Animi, tenetur in.
+            </p>
+          </div>
+
+          <div>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="pago__disabled d-flex flex-direction-reverse-column mT-3">
+          <div>
+            <h2 class="text-transform-uppercase font-jost fs-2">
+              red social adicional
+            </h2>
+            <p class="line-height-md fs-small mT-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis modi magnam qui similique incidunt iure laborum
+              aperiam. Animi, tenetur in.
+            </p>
+
+            <ul class="pago__radioBox mT-2">
+              <!-- li start -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">1</label>
+                <input type="radio" name="selectRed" class="pago__inputRadio" />
+              </li>
+              <!-- li end -->
+              <!-- li star -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">2</label>
+                <input
+                  type="radio"
+                  name="selectRed"
+                  class="pago__inputRadio"
+                  checked
+                />
+              </li>
+              <!-- li end -->
+              <!-- li start -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">3</label>
+                <input type="radio" name="selectRed" class="pago__inputRadio" />
+              </li>
+              <!-- li end -->
+              <!-- li start -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">4</label>
+                <input type="radio" name="selectRed" class="pago__inputRadio" />
+              </li>
+              <!-- li end -->
+              <!-- li star -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">5</label>
+                <input type="radio" name="selectRed" class="pago__inputRadio" />
+              </li>
+              <!-- li end -->
+              <!-- li start -->
+              <li class="d-flex flex-direction-column align-items-center gap-1">
+                <label for="#" class="fs-small">6</label>
+                <input type="radio" name="selectRed" class="pago__inputRadio" />
+              </li>
+              <!-- li end -->
+            </ul>
+          </div>
+
+          <div>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <footer
+          class="d-flex align-items-center justify-content-between c-main fs-3 pT-2 mT-3"
+        >
+          <p class="pago__total text-transform-uppercase">TOTAL:</p>
+
+          <p class="pago__total text-transform-uppercase">300.25€</p>
+        </footer>
+      </form>
+    </div>
 
     <header class="header bg-multicolor">
       <div class="container">
@@ -302,12 +551,11 @@
                 No te obliga a renovar licencias ni a comprobar addans
               </h3>
 
-              <a
-                href="#"
-                class="btn btn--radiusBig btn--box-shadow btn--multicolor pX-3 pY-1 c-white fs-md fw-600 text-transform-uppercase mT-5"
+              <button
+                class="openModal btn btn--radiusBig btn--box-shadow btn--multicolor pX-3 pY-1 c-white fs-md fw-600 text-transform-uppercase mT-5"
               >
                 cuéntanos tu proyecto
-              </a>
+              </button>
             </div>
           </div>
           <div class="columns__box">
