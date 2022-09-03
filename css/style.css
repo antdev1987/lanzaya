@@ -714,6 +714,13 @@ body {
 .pago {
   /* Rounded sliders */
 }
+.pago__checked {
+  height: 3rem;
+}
+.pago__border {
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #4dceb5;
+}
 .pago > .d-flex {
   gap: 3rem;
 }
@@ -954,21 +961,19 @@ body {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  backdrop-filter: blur(1rem);
-  -webkit-backdrop-filter: blur(1rem);
+  background-color: #fefefe;
+  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
   padding: 2rem;
 }
 
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
-  padding: 8rem 5rem;
+  padding: 8rem 2rem;
   margin: auto;
   width: 100%;
-  max-width: 900px;
+  max-width: 700px;
 }
 
 /* The Close Button */
