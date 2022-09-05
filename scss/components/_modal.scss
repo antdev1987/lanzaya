@@ -1,45 +1,49 @@
 .modal {
-    display: none; /* Hidden by default */
-    align-items: center;
-    position: fixed; /* Stay in place */
-    z-index: 10001; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: #fefefe;
-    backdrop-filter: blur(2rem);
-    -webkit-backdrop-filter: blur(2rem);
-    padding: 2rem;
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    position: relative;
-      
-    padding: 8rem 2rem;
-    margin: auto;
+  display: none; /* Hidden by default */
+  align-items: center;
+  position: fixed; /* Stay in place */
+  z-index: 10001; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #fefefe;
+  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
+  padding: 2rem;
+}
 
-    width: 100%;
-    max-width: 700px;
+/* Modal Content */
+.modal-content {
+  position: relative;
+
+  padding: 8rem 2rem;
+  margin: auto;
+
+  width: 100%;
+  max-width: 700px;
+
+  &--big {
+    max-width: 1000px;
   }
-  
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    
-    color: #aaaaaa;
-    
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+
+  color: #aaaaaa;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -21,6 +21,7 @@
 
     <!-- js -->
     <script src="js/servicio.js" defer></script>
+    <script src="js/modal.js" defer></script>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="css/normalize.css" />
@@ -82,6 +83,212 @@
         </div>
       </div>
     </nav>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <form class="modal-content pago">
+        <span class="close">&times;</span>
+
+        <div
+          class="d-flex flex-direction-reverse-column bg-white flexContainer__box--radius border-dark pY-2 pX-2"
+        >
+          <div class="flex-1">
+            <h2 class="text-transform-uppercase fs-md">
+              Plan EmprenYA Branding
+            </h2>
+
+            <ul class="fs-2 mT-2">
+              <li class="d-flex align-items-center gap-1 mT-2">
+                <img
+                  src="images/CP/comprobado.png"
+                  alt=""
+                  class="pago__checked"
+                />
+
+                <p>Desarrollo de la marca desde un naming proporcionado.</p>
+              </li>
+              <!-- li end -->
+
+              <!-- li end -->
+              <li class="d-flex align-items-center gap-1 mT-2">
+                <img
+                  src="images/CP/comprobado.png"
+                  alt=""
+                  class="pago__checked"
+                />
+
+                <p>Elaboración de línea gráfica para el proyecto</p>
+              </li>
+              <!-- li end -->
+
+              <!-- li end -->
+              <li class="d-flex align-items-center gap-1 mT-2">
+                <img
+                  src="images/CP/comprobado.png"
+                  alt=""
+                  class="pago__checked"
+                />
+
+                <p>
+                  Análisis de manual de identidad visual de marca para el
+                  correcto uso de la identidad corporativa.
+                </p>
+              </li>
+              <!-- li end -->
+
+              <!-- li end -->
+              <li class="d-flex align-items-center gap-1 mT-2">
+                <img
+                  src="images/CP/comprobado.png"
+                  alt=""
+                  class="pago__checked"
+                />
+
+                <p>Conceptualización y desiño de logotipo.</p>
+              </li>
+              <!-- li end -->
+
+              <!-- li end -->
+              <li class="d-flex align-items-center gap-1 mT-2">
+                <img
+                  src="images/CP/comprobado.png"
+                  alt=""
+                  class="pago__checked"
+                />
+
+                <p>
+                  Usos permitidos, colores, tipografia, tamaños minimos,
+                  positivos / negativos, versioón horizontal y vertical.
+                </p>
+              </li>
+              <!-- li end -->
+
+              <!-- li end -->
+              <li class="d-flex align-items-center gap-1 mT-2">
+                <img
+                  src="images/CP/comprobado.png"
+                  alt=""
+                  class="pago__checked"
+                />
+
+                <p>
+                  Diseño del lenguaje gráfico asociado al discurso corportavio.
+                </p>
+              </li>
+              <!-- li end -->
+            </ul>
+          </div>
+
+          <div>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-direction-reverse-column bg-white pago__disabled flexContainer__box--radius border-dark pY-2 pX-2 mT-5"
+        >
+          <div class="flex-1">
+            <h2 class="text-transform-uppercase fs-md">
+              Plan EmprenYA Branding PRO
+            </h2>
+
+            <ul class="fs-2 mT-2">
+              <li class="d-flex align-items-center gap-1 mT-2">
+                <img
+                  src="images/CP/comprobado.png"
+                  alt=""
+                  class="pago__checked"
+                />
+
+                <p>Diseño de tarjetas de visita.</p>
+              </li>
+              <!-- li end -->
+
+              <!-- li end -->
+              <li class="d-flex align-items-center gap-1 mT-2">
+                <img
+                  src="images/CP/comprobado.png"
+                  alt=""
+                  class="pago__checked"
+                />
+
+                <p>Diseño de firma para email.</p>
+              </li>
+              <!-- li end -->
+
+              <!-- li end -->
+              <li class="d-flex align-items-center gap-1 mT-2">
+                <img
+                  src="images/CP/comprobado.png"
+                  alt=""
+                  class="pago__checked"
+                />
+
+                <p>Diseño de primera comunicación</p>
+              </li>
+              <!-- li end -->
+
+              <!-- li end -->
+              <li class="d-flex align-items-center gap-1 mT-2">
+                <img
+                  src="images/CP/comprobado.png"
+                  alt=""
+                  class="pago__checked"
+                />
+
+                <p>Diseño de papelería, folio y sobre</p>
+              </li>
+              <!-- li end -->
+
+              <!-- li end -->
+              <li class="d-flex align-items-center gap-1 mT-2">
+                <img
+                  src="images/CP/comprobado.png"
+                  alt=""
+                  class="pago__checked"
+                />
+
+                <p>Diseño de presentación</p>
+              </li>
+              <!-- li end -->
+
+              <!-- li end -->
+              <li class="d-flex align-items-center gap-1 mT-2">
+                <img
+                  src="images/CP/comprobado.png"
+                  alt=""
+                  class="pago__checked"
+                />
+
+                <p>
+                  Aplicaciones
+                </p>
+              </li>
+              <!-- li end -->
+            </ul>
+          </div>
+
+          <div>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="pago__border--top mT-3">
+          <button
+            class="openModal btn bg-green c-white flexContainer__box--radius w-100 text-transform-uppercase fs-md pY-2"
+          >
+            seleccionar
+          </button>
+        </div>
+      </form>
+    </div>
 
     <header class="bg-multicolor pY-10">
       <div class="container text-center">
@@ -531,7 +738,7 @@
             </ul>
 
             <button
-              class="btn bg-black flexContainer__box--radius c-white w-100 text-transform-uppercase fs-md pY-2 mT-5"
+              class="openModal btn bg-black flexContainer__box--radius c-white w-100 text-transform-uppercase fs-md pY-2 mT-5"
             >
               seleccionar
             </button>
@@ -618,7 +825,7 @@
             </ul>
 
             <button
-              class="btn bg-white c-black flexContainer__box--radius w-100 text-transform-uppercase fs-md pY-2 mT-5"
+              class="openModal btn bg-white c-black flexContainer__box--radius w-100 text-transform-uppercase fs-md pY-2 mT-5"
             >
               seleccionar
             </button>

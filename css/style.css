@@ -253,6 +253,10 @@ body {
   row-gap: 5rem;
 }
 
+.column-gap-5 {
+  column-gap: 5rem;
+}
+
 .font-jost {
   font-family: "Jost", sans-serif;
 }
@@ -721,6 +725,10 @@ body {
   padding-bottom: 1rem;
   border-bottom: 3px solid #4dceb5;
 }
+.pago__border--top {
+  padding-top: 3rem;
+  border-top: 3px solid #4dceb5;
+}
 .pago > .d-flex {
   gap: 3rem;
 }
@@ -974,6 +982,9 @@ body {
   margin: auto;
   width: 100%;
   max-width: 700px;
+}
+.modal-content--big {
+  max-width: 1000px;
 }
 
 /* The Close Button */
